@@ -76,6 +76,36 @@
     <Compile Include="Forms\Login and Main Pages\MemberMainPage.Designer.cs">
       <DependentUpon>MemberMainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.Designer.cs">
+      <DependentUpon>CheckMemberStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\EditAccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\EditAccountInfo.Designer.cs">
+      <DependentUpon>EditAccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ManagePaymentMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ManagePaymentMethods.Designer.cs">
+      <DependentUpon>ManagePaymentMethods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\UpdateAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\UpdateAddress.Designer.cs">
+      <DependentUpon>UpdateAddress.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Member Pages\[M]AccountInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +150,15 @@
     <EmbeddedResource Include="Forms\Login and Main Pages\MemberMainPage.resx">
       <DependentUpon>MemberMainPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.resx">
+      <DependentUpon>CheckMemberStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\ManagePaymentMethods.resx">
+      <DependentUpon>ManagePaymentMethods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\UpdateAddress.resx">
+      <DependentUpon>UpdateAddress.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member Pages\[M]AccountInfo.resx">
       <DependentUpon>[M]AccountInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +196,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -83,7 +83,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(448, 411);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 29);
+            this.button2.Size = new System.Drawing.Size(141, 43);
             this.button2.TabIndex = 6;
             this.button2.Text = "Admin Login";
             this.button2.UseVisualStyleBackColor = true;
@@ -92,16 +92,16 @@
             // 
             this.button3.Location = new System.Drawing.Point(139, 411);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 29);
+            this.button3.Size = new System.Drawing.Size(88, 43);
             this.button3.TabIndex = 7;
             this.button3.Text = "Login";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(293, 494);
+            this.button1.Location = new System.Drawing.Point(266, 494);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 67);
+            this.button1.Size = new System.Drawing.Size(144, 74);
             this.button1.TabIndex = 8;
             this.button1.Text = "Create Account";
             this.button1.UseVisualStyleBackColor = true;
