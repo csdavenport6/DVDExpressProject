@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Admin Pages\[A]InventoryMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\[A]InventoryMgmt.Designer.cs">
+      <DependentUpon>[A]InventoryMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\[A]ManageAccts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\[A]ManageAccts.Designer.cs">
+      <DependentUpon>[A]ManageAccts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login and Main Pages\AdminMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Admin Pages\[A]ManageAccts.resx">
+      <DependentUpon>[A]ManageAccts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login and Main Pages\AdminMainPage.resx">
       <DependentUpon>AdminMainPage.cs</DependentUpon>
     </EmbeddedResource>
