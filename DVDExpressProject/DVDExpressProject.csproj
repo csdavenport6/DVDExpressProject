@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes %28Business Logic%29\Account.cs" />
+    <Compile Include="Classes %28Business Logic%29\AccountReward.cs" />
+    <Compile Include="Classes %28Business Logic%29\Member.cs" />
+    <Compile Include="Classes %28Business Logic%29\Reward.cs" />
+    <Compile Include="Classes %28Business Logic%29\Transaction.cs" />
     <Compile Include="Forms\Admin Pages\[A]InventoryMgmt.cs">
       <SubType>Form</SubType>
     </Compile>
