@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DVDExpressProject
+namespace DVDExpressProject.Forms.Member_Pages
 {
-    public partial class Form1 : Form
+    public partial class _M_BrowseMovies : Form
     {
-        public Form1()
+        public _M_BrowseMovies()
         {
             InitializeComponent();
         }
