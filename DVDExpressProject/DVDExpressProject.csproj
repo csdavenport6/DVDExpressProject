@@ -46,9 +46,101 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Account.cs" />
-    <Compile Include="Classes\AccountReward.cs" />
-    <Compile Include="Classes\Member.cs" />
+    <Compile Include="Classes %28Business Logic%29\Account.cs" />
+    <Compile Include="Classes %28Business Logic%29\AccountReward.cs" />
+    <Compile Include="Classes %28Business Logic%29\Member.cs" />
+    <Compile Include="Classes %28Business Logic%29\Reward.cs" />
+    <Compile Include="Classes %28Business Logic%29\Transaction.cs" />
+    <Compile Include="Forms\Admin Pages\[A]InventoryMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\[A]InventoryMgmt.Designer.cs">
+      <DependentUpon>[A]InventoryMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\[A]ManageAccts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\[A]ManageAccts.Designer.cs">
+      <DependentUpon>[A]ManageAccts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login and Main Pages\AdminMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login and Main Pages\AdminMainPage.Designer.cs">
+      <DependentUpon>AdminMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login and Main Pages\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login and Main Pages\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login and Main Pages\MemberMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login and Main Pages\MemberMainPage.Designer.cs">
+      <DependentUpon>MemberMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.Designer.cs">
+      <DependentUpon>CheckMemberStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\EditAccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\EditAccountInfo.Designer.cs">
+      <DependentUpon>EditAccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ManagePaymentMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\ManagePaymentMethods.Designer.cs">
+      <DependentUpon>ManagePaymentMethods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\UpdateAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\Account Update Pages\UpdateAddress.Designer.cs">
+      <DependentUpon>UpdateAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]AccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]AccountInfo.Designer.cs">
+      <DependentUpon>[M]AccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]BrowseMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]BrowseMovies.Designer.cs">
+      <DependentUpon>[M]BrowseMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]Search.Designer.cs">
+      <DependentUpon>[M]Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]ViewCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]ViewCart.Designer.cs">
+      <DependentUpon>[M]ViewCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]ViewWishlists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Member Pages\[M]ViewWishlists.Designer.cs">
+      <DependentUpon>[M]ViewWishlists.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Reward.cs" />
@@ -75,9 +167,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
