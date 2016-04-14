@@ -11,6 +11,9 @@ namespace DVDExpressProject.Classes
         //members and properties
         //------------------------
         public string MemStatus { get; set; }
+        public int CreditCardNo { get; set; }
+        public double Balance { get; set; }
+
         //methods
         //------------------------
     }
