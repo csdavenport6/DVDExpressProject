@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DVDExpressProject.Forms.Member_Pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,24 @@ namespace DVDExpressProject
 {
     public partial class Form1 : Form
     {
+        private _M_AccountInfo mAccInfo;
+        public _M_AccountInfo MAccInfo
+        {
+            get { return mAccInfo; }
+            set { mAccInfo = value; }
+        }
+
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+           _M_AccountInfo mAccInfo = new _M_AccountInfo();
+           mAccInfo.Show();
+           MessageBox.Show("Login Succesful");
+           this.Hide();
+        }
     }
 }

@@ -32,11 +32,13 @@
             // 
             // _M_ViewCart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 668);
+            this.ClientSize = new System.Drawing.Size(507, 434);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "_M_ViewCart";
             this.Text = "_M_ViewCart";
+            this.Load += new System.EventHandler(this._M_ViewCart_Load);
             this.ResumeLayout(false);
 
         }

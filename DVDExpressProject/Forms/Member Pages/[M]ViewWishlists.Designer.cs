@@ -32,11 +32,13 @@
             // 
             // _M_ViewWishlists
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 680);
+            this.ClientSize = new System.Drawing.Size(483, 442);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "_M_ViewWishlists";
             this.Text = "_M_ViewWishlists";
+            this.Load += new System.EventHandler(this._M_ViewWishlists_Load);
             this.ResumeLayout(false);
 
         }
