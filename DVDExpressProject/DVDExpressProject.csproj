@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +53,7 @@
     <Compile Include="Classes\Review.cs" />
     <Compile Include="Classes\Reward.cs" />
     <Compile Include="Classes\Transaction.cs" />
+    <Compile Include="DataLayer\MemberDL.cs" />
     <Compile Include="Forms\Admin Pages\[A]ManageAccts.cs">
       <SubType>Form</SubType>
     </Compile>
