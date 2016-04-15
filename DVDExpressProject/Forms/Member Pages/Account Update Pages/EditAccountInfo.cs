@@ -16,5 +16,10 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
