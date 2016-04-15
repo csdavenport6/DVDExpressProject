@@ -1,6 +1,6 @@
 ﻿namespace DVDExpressProject.Forms.Admin_Pages
 {
-    partial class _A_InventoryMgmt
+    partial class _A_ManageInventory
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "_A_InventoryMgmt";
+            this.Text = "_A_ManageInventory";
         }
 
         #endregion

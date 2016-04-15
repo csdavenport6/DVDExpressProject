@@ -24,7 +24,7 @@ namespace DVDExpressProject.Forms.Member_Pages
             _M_Search search = new _M_Search();
             search.Show();
             search.MAccInfo = this;
-            this.Hide();
+            
         }
 
         //Browse Button
@@ -33,7 +33,7 @@ namespace DVDExpressProject.Forms.Member_Pages
             _M_BrowseMovies browse = new _M_BrowseMovies();
             browse.Show();
             browse.MAccInfo = this;
-            this.Hide();
+            
         }
 
         //Cart Button
@@ -42,7 +42,7 @@ namespace DVDExpressProject.Forms.Member_Pages
             _M_ViewCart cart = new _M_ViewCart();
             cart.Show();
             cart.MAccInfo = this;
-            this.Hide();
+            
         }
 
         //Wishlist Button
@@ -51,12 +51,12 @@ namespace DVDExpressProject.Forms.Member_Pages
             _M_ViewWishlists wishlist = new _M_ViewWishlists();
             wishlist.Show();
             wishlist.MAccInfo = this;
-            this.Hide();
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBox1.Items.Add()
+            //comboBox1.Items.Add();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DVDExpressProject.Forms.Admin_Pages
 {
-    public partial class _A_InventoryMgmt : Form
+    public partial class _A_ManageInventory : Form
     {
-        public _A_InventoryMgmt()
+        public _A_ManageInventory()
         {
             InitializeComponent();
         }
