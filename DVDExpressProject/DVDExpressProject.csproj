@@ -150,6 +150,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Login and Main Pages\CreateAcct.resx">
+      <DependentUpon>CreateAcct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login and Main Pages\MemberMainPage.resx">
       <DependentUpon>MemberMainPage.cs</DependentUpon>
     </EmbeddedResource>
