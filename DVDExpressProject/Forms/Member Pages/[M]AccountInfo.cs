@@ -53,5 +53,10 @@ namespace DVDExpressProject.Forms.Member_Pages
             wishlist.MAccInfo = this;
             this.Hide();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox1.Items.Add()
+        }
     }
 }
