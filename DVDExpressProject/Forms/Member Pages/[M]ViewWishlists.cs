@@ -28,5 +28,10 @@ namespace DVDExpressProject.Forms.Member_Pages
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
