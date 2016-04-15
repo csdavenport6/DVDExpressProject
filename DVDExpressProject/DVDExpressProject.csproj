@@ -46,11 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes %28Business Logic%29\Account.cs" />
-    <Compile Include="Classes %28Business Logic%29\AccountReward.cs" />
-    <Compile Include="Classes %28Business Logic%29\Member.cs" />
-    <Compile Include="Classes %28Business Logic%29\Reward.cs" />
-    <Compile Include="Classes %28Business Logic%29\Transaction.cs" />
+    <Compile Include="Classes\Account.cs" />
+    <Compile Include="Classes\AccountReward.cs" />
+    <Compile Include="Classes\Member.cs" />
+    <Compile Include="Classes\Review.cs" />
+    <Compile Include="Classes\Reward.cs" />
+    <Compile Include="Classes\Transaction.cs" />
     <Compile Include="Forms\Admin Pages\[A]InventoryMgmt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +69,10 @@
     </Compile>
     <Compile Include="Forms\Login and Main Pages\AdminMainPage.Designer.cs">
       <DependentUpon>AdminMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login and Main Pages\CreateAcct.cs" />
+    <Compile Include="Forms\Login and Main Pages\CreateAcct.Designer.cs">
+      <DependentUpon>CreateAcct.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login and Main Pages\LoginPage.cs">
       <SubType>Form</SubType>
@@ -143,6 +148,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Admin Pages\[A]InventoryMgmt.resx">
+      <DependentUpon>[A]InventoryMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login and Main Pages\CreateAcct.resx">
+      <DependentUpon>CreateAcct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login and Main Pages\MemberMainPage.resx">
+      <DependentUpon>MemberMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\[M]AccountInfo.resx">
+      <DependentUpon>[M]AccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -151,6 +168,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -165,7 +183,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\dvdexpress logo.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
