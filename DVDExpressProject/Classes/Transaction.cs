@@ -19,5 +19,9 @@ namespace DVDExpressProject.Classes
         public double Total { get; set; }
         //methods
         //------------------------
+        public void ApplyReward(ref double total)
+        {
+
+        }
     }
 }

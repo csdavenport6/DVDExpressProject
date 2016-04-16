@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
+namespace DVDExpressProject.Forms.Login_and_Main_Pages
 {
-    public partial class EditAccountInfo : Form
+    public partial class CreateAcct : Form
     {
-        public EditAccountInfo()
+        public CreateAcct()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
