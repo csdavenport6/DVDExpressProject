@@ -19,5 +19,6 @@ namespace DVDExpressProject.DataLayer
             get { return MemberDL.connectionString; }
             set { MemberDL.connectionString = value; }
         }
+        
     }
 }
