@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Classes\AccountReward.cs" />
+    <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\Member.cs" />
+    <Compile Include="Classes\Movie.cs" />
     <Compile Include="Classes\Review.cs" />
     <Compile Include="Classes\Reward.cs" />
     <Compile Include="Classes\Transaction.cs" />
@@ -150,6 +152,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Wishlist.cs" />
     <EmbeddedResource Include="Forms\Login and Main Pages\CreateAcct.resx">
       <DependentUpon>CreateAcct.cs</DependentUpon>
     </EmbeddedResource>
