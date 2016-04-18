@@ -54,9 +54,5 @@ namespace DVDExpressProject.Forms.Member_Pages
             
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //comboBox1.Items.Add();
-        }
     }
 }

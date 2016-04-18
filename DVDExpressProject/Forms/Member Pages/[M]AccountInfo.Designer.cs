@@ -28,80 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Change Password");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Check Member Status");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Edit Account Info");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Manage Payment Methods");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Update Address");
+            this.SearchMovies = new System.Windows.Forms.Button();
+            this.BrowseMovies = new System.Windows.Forms.Button();
+            this.ViewCart = new System.Windows.Forms.Button();
+            this.ViewWishlist = new System.Windows.Forms.Button();
+            this.AccountInfo = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.AccountEditList = new System.Windows.Forms.ListView();
+            this.listView2 = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
+            // SearchMovies
             // 
-            this.button4.Location = new System.Drawing.Point(3, 2);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(203, 80);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Search Movies";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.SearchMovies.Location = new System.Drawing.Point(3, 2);
+            this.SearchMovies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SearchMovies.Name = "SearchMovies";
+            this.SearchMovies.Size = new System.Drawing.Size(228, 100);
+            this.SearchMovies.TabIndex = 3;
+            this.SearchMovies.Text = "Search Movies";
+            this.SearchMovies.UseVisualStyleBackColor = true;
+            this.SearchMovies.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // BrowseMovies
             // 
-            this.button5.Location = new System.Drawing.Point(3, 86);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(204, 91);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Browse Movies";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.BrowseMovies.Location = new System.Drawing.Point(3, 106);
+            this.BrowseMovies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BrowseMovies.Name = "BrowseMovies";
+            this.BrowseMovies.Size = new System.Drawing.Size(230, 114);
+            this.BrowseMovies.TabIndex = 4;
+            this.BrowseMovies.Text = "Browse Movies";
+            this.BrowseMovies.UseVisualStyleBackColor = true;
+            this.BrowseMovies.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button1
+            // ViewCart
             // 
-            this.button1.Location = new System.Drawing.Point(3, 181);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 80);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cart";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ViewCart.Location = new System.Drawing.Point(3, 224);
+            this.ViewCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewCart.Name = "ViewCart";
+            this.ViewCart.Size = new System.Drawing.Size(228, 100);
+            this.ViewCart.TabIndex = 0;
+            this.ViewCart.Text = "Cart";
+            this.ViewCart.UseVisualStyleBackColor = true;
+            this.ViewCart.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // ViewWishlist
             // 
-            this.button2.Location = new System.Drawing.Point(3, 265);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 80);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Wishlist";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ViewWishlist.Location = new System.Drawing.Point(3, 328);
+            this.ViewWishlist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewWishlist.Name = "ViewWishlist";
+            this.ViewWishlist.Size = new System.Drawing.Size(228, 100);
+            this.ViewWishlist.TabIndex = 1;
+            this.ViewWishlist.Text = "Wishlist";
+            this.ViewWishlist.UseVisualStyleBackColor = true;
+            this.ViewWishlist.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // AccountInfo
             // 
-            this.button3.Location = new System.Drawing.Point(3, 349);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(203, 80);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Account";
-            this.button3.UseVisualStyleBackColor = true;
+            this.AccountInfo.Location = new System.Drawing.Point(3, 432);
+            this.AccountInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AccountInfo.Name = "AccountInfo";
+            this.AccountInfo.Size = new System.Drawing.Size(228, 100);
+            this.AccountInfo.TabIndex = 2;
+            this.AccountInfo.Text = "Account";
+            this.AccountInfo.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -111,15 +116,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(847, 26);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(953, 31);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // helpToolStripMenuItem
@@ -127,58 +132,30 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fAQToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // fAQToolStripMenuItem
             // 
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(111, 26);
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(131, 30);
             this.fAQToolStripMenuItem.Text = "FAQ";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Update Address",
-            "Manage Payment Methods",
-            "Edit Account Information",
-            "Check Membership Status",
-            "Change Password"});
-            this.comboBox1.Location = new System.Drawing.Point(291, 329);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 24);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Previous Orders",
-            "Shipped Orders"});
-            this.comboBox2.Location = new System.Drawing.Point(552, 329);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(195, 24);
-            this.comboBox2.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(341, 303);
+            this.label1.Location = new System.Drawing.Point(384, 379);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
+            this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "Edit Account";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(605, 303);
+            this.label2.Location = new System.Drawing.Point(681, 379);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 17);
+            this.label2.Size = new System.Drawing.Size(102, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Order History";
             // 
@@ -186,46 +163,70 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(247, 148);
+            this.label3.Location = new System.Drawing.Point(278, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 25);
+            this.label3.Size = new System.Drawing.Size(129, 29);
             this.label3.TabIndex = 11;
             this.label3.Text = "Welcome!";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(250, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(281, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(585, 123);
+            this.pictureBox2.Size = new System.Drawing.Size(658, 154);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 44);
+            this.flowLayoutPanel1.Controls.Add(this.SearchMovies);
+            this.flowLayoutPanel1.Controls.Add(this.BrowseMovies);
+            this.flowLayoutPanel1.Controls.Add(this.ViewCart);
+            this.flowLayoutPanel1.Controls.Add(this.ViewWishlist);
+            this.flowLayoutPanel1.Controls.Add(this.AccountInfo);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 55);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(207, 433);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(233, 541);
             this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // AccountEditList
+            // 
+            this.AccountEditList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5});
+            this.AccountEditList.Location = new System.Drawing.Point(322, 411);
+            this.AccountEditList.Name = "AccountEditList";
+            this.AccountEditList.Size = new System.Drawing.Size(247, 138);
+            this.AccountEditList.TabIndex = 12;
+            this.AccountEditList.UseCompatibleStateImageBehavior = false;
+            this.AccountEditList.View = System.Windows.Forms.View.List;
+            // 
+            // listView2
+            // 
+            this.listView2.Location = new System.Drawing.Point(652, 411);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(224, 138);
+            this.listView2.TabIndex = 13;
+            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // _M_AccountInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 577);
+            this.ClientSize = new System.Drawing.Size(953, 721);
+            this.Controls.Add(this.listView2);
+            this.Controls.Add(this.AccountEditList);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -242,21 +243,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button SearchMovies;
+        private System.Windows.Forms.Button BrowseMovies;
+        private System.Windows.Forms.Button ViewCart;
+        private System.Windows.Forms.Button ViewWishlist;
+        private System.Windows.Forms.Button AccountInfo;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ListView AccountEditList;
+        private System.Windows.Forms.ListView listView2;
     }
 }
