@@ -27,8 +27,8 @@ namespace DVDExpressProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-           _M_AccountInfo mAccInfo = new _M_AccountInfo();
-           mAccInfo.Show();
+            _M_BrowseMovies browsePage = new _M_BrowseMovies();
+           browsePage.Show();
            MessageBox.Show("Login Succesful");
            this.Hide();
         }
