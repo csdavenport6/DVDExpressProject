@@ -16,5 +16,10 @@ namespace DVDExpressProject.Forms.Admin_Pages
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
