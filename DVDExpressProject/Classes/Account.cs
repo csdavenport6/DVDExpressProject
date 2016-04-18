@@ -10,9 +10,9 @@ namespace DVDExpressProject.Classes
     {
         //members and properties
         //------------------------
-        protected int AccountID { get; set; }
-        protected string Username { get; set; }
-        protected string Password { get; set; }
+        public int AccountID { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
         //methods
         //------------------------
     }
