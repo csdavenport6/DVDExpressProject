@@ -177,6 +177,9 @@
     <EmbeddedResource Include="Forms\Login and Main Pages\MemberMainPage.resx">
       <DependentUpon>MemberMainPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.resx">
       <DependentUpon>CheckMemberStatus.cs</DependentUpon>
     </EmbeddedResource>

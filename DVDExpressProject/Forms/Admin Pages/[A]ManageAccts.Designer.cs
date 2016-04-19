@@ -31,8 +31,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.AccountReportButton = new System.Windows.Forms.Button();
+            this.TransactionReportButton = new System.Windows.Forms.Button();
+            this.AccountListing = new System.Windows.Forms.ListBox();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.ReturnButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,24 +63,60 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // button1
+            // UpdateButton
             // 
-            this.button1.Location = new System.Drawing.Point(331, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(353, 79);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.UpdateButton.Location = new System.Drawing.Point(180, 460);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(353, 79);
+            this.UpdateButton.TabIndex = 2;
+            this.UpdateButton.Text = "Update Customer Account";
+            this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // AccountReportButton
             // 
-            this.button2.Location = new System.Drawing.Point(331, 292);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(353, 79);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.AccountReportButton.Location = new System.Drawing.Point(180, 350);
+            this.AccountReportButton.Name = "AccountReportButton";
+            this.AccountReportButton.Size = new System.Drawing.Size(353, 79);
+            this.AccountReportButton.TabIndex = 3;
+            this.AccountReportButton.Text = "Customer Account Report";
+            this.AccountReportButton.UseVisualStyleBackColor = true;
+            // 
+            // TransactionReportButton
+            // 
+            this.TransactionReportButton.Location = new System.Drawing.Point(561, 350);
+            this.TransactionReportButton.Name = "TransactionReportButton";
+            this.TransactionReportButton.Size = new System.Drawing.Size(353, 79);
+            this.TransactionReportButton.TabIndex = 4;
+            this.TransactionReportButton.Text = "Produce Transaction Report";
+            this.TransactionReportButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountListing
+            // 
+            this.AccountListing.FormattingEnabled = true;
+            this.AccountListing.ItemHeight = 25;
+            this.AccountListing.Location = new System.Drawing.Point(201, 107);
+            this.AccountListing.Name = "AccountListing";
+            this.AccountListing.Size = new System.Drawing.Size(679, 179);
+            this.AccountListing.TabIndex = 5;
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.Location = new System.Drawing.Point(561, 492);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(154, 47);
+            this.SaveButton.TabIndex = 6;
+            this.SaveButton.Text = "Save Update";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            // 
+            // ReturnButton
+            // 
+            this.ReturnButton.Location = new System.Drawing.Point(792, 570);
+            this.ReturnButton.Name = "ReturnButton";
+            this.ReturnButton.Size = new System.Drawing.Size(197, 61);
+            this.ReturnButton.TabIndex = 7;
+            this.ReturnButton.Text = "Return";
+            this.ReturnButton.UseVisualStyleBackColor = true;
             // 
             // _A_ManageAccts
             // 
@@ -84,8 +124,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1048, 663);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ReturnButton);
+            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.AccountListing);
+            this.Controls.Add(this.TransactionReportButton);
+            this.Controls.Add(this.AccountReportButton);
+            this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "_A_ManageAccts";
@@ -102,7 +146,11 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button AccountReportButton;
+        private System.Windows.Forms.Button TransactionReportButton;
+        private System.Windows.Forms.ListBox AccountListing;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button ReturnButton;
     }
 }
