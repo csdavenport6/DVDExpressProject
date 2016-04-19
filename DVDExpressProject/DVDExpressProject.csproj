@@ -162,6 +162,9 @@
     <None Include="DVDExpress.dbml.layout">
       <DependentUpon>DVDExpress.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="Forms\Admin Pages\[A]ManageInventory.resx">
+      <DependentUpon>[A]ManageInventory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login and Main Pages\CreateAcct.resx">
       <DependentUpon>CreateAcct.cs</DependentUpon>
     </EmbeddedResource>
