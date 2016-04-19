@@ -21,5 +21,20 @@ namespace DVDExpressProject.Forms.Admin_Pages
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _A_ManageInventory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
