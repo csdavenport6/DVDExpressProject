@@ -224,6 +224,7 @@
             this.AddToCartButton.TabIndex = 17;
             this.AddToCartButton.Text = "Add To Cart";
             this.AddToCartButton.UseVisualStyleBackColor = true;
+            this.AddToCartButton.Click += new System.EventHandler(this.AddToCartButton_Click);
             // 
             // AddToWishlist
             // 
