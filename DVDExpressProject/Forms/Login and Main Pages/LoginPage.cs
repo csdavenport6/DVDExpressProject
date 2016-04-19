@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DVDExpressProject.Forms;
+using DVDExpressProject.Forms.Login_and_Main_Pages;
 
 namespace DVDExpressProject
 {
@@ -28,7 +29,7 @@ namespace DVDExpressProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-           MemberMainPage homePage = new MemberMainPage() ;
+           MemberMainPage homePage = new MemberMainPage();
            homePage.Show();
            MessageBox.Show("Login Succesful");
            this.Hide();
@@ -42,6 +43,12 @@ namespace DVDExpressProject
         private void button1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void CreateAcctButton_Click(object sender, EventArgs e)
+        {
+            CreateAcct createAcctPage = new CreateAcct();
+            createAcctPage.Show();
         }
     }
 }

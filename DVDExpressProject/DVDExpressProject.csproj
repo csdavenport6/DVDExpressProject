@@ -165,8 +165,14 @@
     <EmbeddedResource Include="Forms\Login and Main Pages\CreateAcct.resx">
       <DependentUpon>CreateAcct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login and Main Pages\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login and Main Pages\MemberMainPage.resx">
       <DependentUpon>MemberMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.resx">
+      <DependentUpon>CheckMemberStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member Pages\[M]AccountInfo.resx">
       <DependentUpon>[M]AccountInfo.cs</DependentUpon>

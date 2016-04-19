@@ -1,4 +1,5 @@
 ﻿
+using DVDExpressProject.Forms.Member_Pages.Account_Update_Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,5 +55,33 @@ namespace DVDExpressProject.Forms.Member_Pages
             
         }
 
+        private void EditAccountOptions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (EditAccountOptions.SelectedItem == "Change Password")
+            {
+                ChangePassword changePasswordPage = new ChangePassword();
+                changePasswordPage.Show();
+            }
+            if (EditAccountOptions.SelectedItem == "Check Member Status")
+            {
+                CheckMemberStatus memStatusPage = new CheckMemberStatus();
+                memStatusPage.Show();
+            }
+            if (EditAccountOptions.SelectedItem == "Edit Account Info")
+            {
+                EditAccountInfo editInfoPage = new EditAccountInfo();
+                editInfoPage.Show();
+            }
+            if (EditAccountOptions.SelectedItem == "Manage Payment Methods")
+            {
+                ManagePaymentMethods changePaymentPage = new ManagePaymentMethods();
+                changePaymentPage.Show();
+            }
+            if (EditAccountOptions.SelectedItem == "Update Address")
+            {
+                UpdateAddress updateAddressPage = new UpdateAddress();
+                updateAddressPage.Show();
+            }
+        }
     }
 }

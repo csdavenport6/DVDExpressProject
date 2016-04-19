@@ -34,6 +34,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         {
             _M_Search search = new _M_Search();
             search.Show();
+            this.Hide();
         }
 
         //Browse
@@ -41,6 +42,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         {
             _M_BrowseMovies browse = new _M_BrowseMovies();
             browse.Show();
+            this.Hide();
         }
 
         //Wishlist
@@ -48,6 +50,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         {
             _M_ViewWishlists wishlist = new _M_ViewWishlists();
             wishlist.Show();
+            this.Hide();
         }
 
         //Wishlist
@@ -55,6 +58,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         {
             _M_AccountInfo account = new _M_AccountInfo();
             account.Show();
+            this.Hide();
         }
     }
 }
