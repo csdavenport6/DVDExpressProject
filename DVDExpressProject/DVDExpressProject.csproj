@@ -48,15 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Account.cs" />
-    <Compile Include="Classes\AccountReward.cs" />
-    <Compile Include="Classes\Admin.cs" />
-    <Compile Include="Classes\Member.cs" />
-    <Compile Include="Classes\Movie.cs" />
-    <Compile Include="Classes\Review.cs" />
-    <Compile Include="Classes\Reward.cs" />
-    <Compile Include="Classes\Transaction.cs" />
-    <Compile Include="DataLayer\MemberDL.cs" />
+    <Compile Include="DVDExpress.cs">
+      <DependentUpon>DVDExpress.dbml</DependentUpon>
+    </Compile>
     <Compile Include="DVDExpress.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -160,7 +154,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\Wishlist.cs" />
+    <Compile Include="S2T5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>S2T5DataSet.xsd</DependentUpon>
+    </Compile>
     <None Include="DVDExpress.dbml.layout">
       <DependentUpon>DVDExpress.dbml</DependentUpon>
     </None>
@@ -172,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member Pages\[M]AccountInfo.resx">
       <DependentUpon>[M]AccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\[M]BrowseMovies.resx">
+      <DependentUpon>[M]BrowseMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\[M]Search.resx">
+      <DependentUpon>[M]Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -197,6 +201,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="S2T5DataSet.xsc">
+      <DependentUpon>S2T5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S2T5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>S2T5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="S2T5DataSet.xss">
+      <DependentUpon>S2T5DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
