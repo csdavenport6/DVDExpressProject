@@ -16,5 +16,10 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
         {
             InitializeComponent();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
