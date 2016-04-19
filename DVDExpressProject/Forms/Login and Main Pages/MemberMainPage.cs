@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DVDExpressProject.Forms.Member_Pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +18,39 @@ namespace DVDExpressProject.Forms
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void SearchButton_Click(object sender, EventArgs e)
         {
-
+            _M_Search search = new _M_Search();
+            search.Show();
+            this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void BrowseButton_Click(object sender, EventArgs e)
         {
+            _M_BrowseMovies browse = new _M_BrowseMovies();
+            browse.Show();
+            this.Hide();
+        }
 
+        private void ViewCartButton_Click(object sender, EventArgs e)
+        {
+            _M_ViewCart cart = new _M_ViewCart();
+            cart.Show();
+            this.Hide();
+        }
+
+        private void ViewWishlistButton_Click(object sender, EventArgs e)
+        {
+            _M_ViewWishlists wishlist = new _M_ViewWishlists();
+            wishlist.Show();
+            this.Hide();
+        }
+
+        private void ViewAcctButton_Click(object sender, EventArgs e)
+        {
+            _M_AccountInfo account = new _M_AccountInfo();
+            account.Show();
+            this.Hide();
         }
     }
 }

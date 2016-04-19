@@ -32,51 +32,39 @@ namespace DVDExpressProject.Forms.Member_Pages
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void SearchButton_Click(object sender, EventArgs e)
         {
-
+            _M_Search search = new _M_Search();
+            search.Show();
+            this.Hide();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        //Browse Button
-        private void button5_Click(object sender, EventArgs e)
+        private void BrowseButton_Click(object sender, EventArgs e)
         {
             _M_BrowseMovies browse = new _M_BrowseMovies();
             browse.Show();
-            //browse.MBrowse = this;
+            this.Hide();
         }
 
-        //Cart Button
-        private void button1_Click(object sender, EventArgs e)
+        private void ViewCartButton_Click(object sender, EventArgs e)
         {
             _M_ViewCart cart = new _M_ViewCart();
             cart.Show();
-            //cart.MAccInfo = this;
+            this.Hide();
         }
 
-        //Wishlist Button
-        private void button2_Click(object sender, EventArgs e)
+        private void ViewWishlistButton_Click(object sender, EventArgs e)
         {
             _M_ViewWishlists wishlist = new _M_ViewWishlists();
             wishlist.Show();
-            //wishlist.MAccInfo = this;
+            this.Hide();
         }
 
-        //Account Info Button
-        private void button3_Click(object sender, EventArgs e)
+        private void ViewAcctButton_Click(object sender, EventArgs e)
         {
             _M_AccountInfo account = new _M_AccountInfo();
             account.Show();
+            this.Hide();
         }
     }
 }

@@ -29,80 +29,84 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.BrowseButton = new System.Windows.Forms.Button();
+            this.CartButton = new System.Windows.Forms.Button();
+            this.WishlistButton = new System.Windows.Forms.Button();
+            this.AcctButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.s2T5DataSet = new DVDExpressProject.S2T5DataSet();
-            this.movieBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.movieTableAdapter = new DVDExpressProject.S2T5DataSetTableAdapters.MovieTableAdapter();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.runTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ratingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.daysForRentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.movieBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.s2T5DataSet = new DVDExpressProject.S2T5DataSet();
+            this.movieTableAdapter = new DVDExpressProject.S2T5DataSetTableAdapters.MovieTableAdapter();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button4
+            // SearchButton
             // 
-            this.button4.Location = new System.Drawing.Point(12, 54);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(228, 100);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Search Movies";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.SearchButton.Location = new System.Drawing.Point(12, 54);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(228, 100);
+            this.SearchButton.TabIndex = 8;
+            this.SearchButton.Text = "Search Movies";
+            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // BrowseButton
             // 
-            this.button5.Location = new System.Drawing.Point(12, 159);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(230, 114);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Browse Movies";
-            this.button5.UseVisualStyleBackColor = true;
+            this.BrowseButton.Location = new System.Drawing.Point(12, 159);
+            this.BrowseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BrowseButton.Name = "BrowseButton";
+            this.BrowseButton.Size = new System.Drawing.Size(230, 114);
+            this.BrowseButton.TabIndex = 9;
+            this.BrowseButton.Text = "Browse Movies";
+            this.BrowseButton.UseVisualStyleBackColor = true;
+            this.BrowseButton.Click += new System.EventHandler(this.BrowseButton_Click);
             // 
-            // button1
+            // CartButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 278);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 100);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Cart";
-            this.button1.UseVisualStyleBackColor = true;
+            this.CartButton.Location = new System.Drawing.Point(12, 278);
+            this.CartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CartButton.Name = "CartButton";
+            this.CartButton.Size = new System.Drawing.Size(228, 100);
+            this.CartButton.TabIndex = 5;
+            this.CartButton.Text = "Cart";
+            this.CartButton.UseVisualStyleBackColor = true;
+            this.CartButton.Click += new System.EventHandler(this.CartButton_Click);
             // 
-            // button2
+            // WishlistButton
             // 
-            this.button2.Location = new System.Drawing.Point(12, 382);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 100);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Wishlist";
-            this.button2.UseVisualStyleBackColor = true;
+            this.WishlistButton.Location = new System.Drawing.Point(12, 382);
+            this.WishlistButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.WishlistButton.Name = "WishlistButton";
+            this.WishlistButton.Size = new System.Drawing.Size(228, 100);
+            this.WishlistButton.TabIndex = 6;
+            this.WishlistButton.Text = "Wishlist";
+            this.WishlistButton.UseVisualStyleBackColor = true;
+            this.WishlistButton.Click += new System.EventHandler(this.WishlistButton_Click);
             // 
-            // button3
+            // AcctButton
             // 
-            this.button3.Location = new System.Drawing.Point(12, 488);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 100);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Account";
-            this.button3.UseVisualStyleBackColor = true;
+            this.AcctButton.Location = new System.Drawing.Point(12, 488);
+            this.AcctButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AcctButton.Name = "AcctButton";
+            this.AcctButton.Size = new System.Drawing.Size(228, 100);
+            this.AcctButton.TabIndex = 7;
+            this.AcctButton.Text = "Account";
+            this.AcctButton.UseVisualStyleBackColor = true;
+            this.AcctButton.Click += new System.EventHandler(this.AcctButton_Click);
             // 
             // label1
             // 
@@ -145,25 +149,11 @@
             this.ratingDataGridViewTextBoxColumn,
             this.daysForRentDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.movieBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(365, 301);
+            this.dataGridView1.Location = new System.Drawing.Point(312, 278);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(545, 310);
+            this.dataGridView1.Size = new System.Drawing.Size(639, 354);
             this.dataGridView1.TabIndex = 16;
-            // 
-            // s2T5DataSet
-            // 
-            this.s2T5DataSet.DataSetName = "S2T5DataSet";
-            this.s2T5DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // movieBindingSource
-            // 
-            this.movieBindingSource.DataMember = "Movie";
-            this.movieBindingSource.DataSource = this.s2T5DataSet;
-            // 
-            // movieTableAdapter
-            // 
-            this.movieTableAdapter.ClearBeforeFill = true;
             // 
             // titleDataGridViewTextBoxColumn
             // 
@@ -200,6 +190,20 @@
             this.daysForRentDataGridViewTextBoxColumn.Name = "daysForRentDataGridViewTextBoxColumn";
             this.daysForRentDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // movieBindingSource
+            // 
+            this.movieBindingSource.DataMember = "Movie";
+            this.movieBindingSource.DataSource = this.s2T5DataSet;
+            // 
+            // s2T5DataSet
+            // 
+            this.s2T5DataSet.DataSetName = "S2T5DataSet";
+            this.s2T5DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // movieTableAdapter
+            // 
+            this.movieTableAdapter.ClearBeforeFill = true;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
@@ -221,18 +225,18 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.BrowseButton);
+            this.Controls.Add(this.CartButton);
+            this.Controls.Add(this.WishlistButton);
+            this.Controls.Add(this.AcctButton);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "_M_BrowseMovies";
             this.Text = "_M_BrowseMovies";
             this.Load += new System.EventHandler(this._M_BrowseMovies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,11 +245,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.Button BrowseButton;
+        private System.Windows.Forms.Button CartButton;
+        private System.Windows.Forms.Button WishlistButton;
+        private System.Windows.Forms.Button AcctButton;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

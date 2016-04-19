@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DVDExpressProject.Forms;
 
 namespace DVDExpressProject
 {
@@ -27,8 +28,8 @@ namespace DVDExpressProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-            _M_BrowseMovies browsePage = new _M_BrowseMovies();
-           browsePage.Show();
+           MemberMainPage homePage = new MemberMainPage() ;
+           homePage.Show();
            MessageBox.Show("Login Succesful");
            this.Hide();
         }

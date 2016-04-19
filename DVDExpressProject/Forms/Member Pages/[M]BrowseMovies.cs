@@ -38,34 +38,35 @@ namespace DVDExpressProject.Forms.Member_Pages
         {
             _M_Search search = new _M_Search();
             search.Show();
+            this.Hide();
         }
 
-        //Browse
-        private void button5_Click(object sender, EventArgs e)
+        private void BrowseButton_Click(object sender, EventArgs e)
         {
             _M_BrowseMovies browse = new _M_BrowseMovies();
             browse.Show();
+            this.Hide();
         }
 
-        //Cart
-        private void button1_Click(object sender, EventArgs e)
+        private void CartButton_Click(object sender, EventArgs e)
         {
             _M_ViewCart cart = new _M_ViewCart();
             cart.Show();
+            this.Hide();
         }
 
-        //Wishlist
-        private void button2_Click(object sender, EventArgs e)
+        private void WishlistButton_Click(object sender, EventArgs e)
         {
             _M_ViewWishlists wishlist = new _M_ViewWishlists();
             wishlist.Show();
+            this.Hide();
         }
 
-        //Account Info
-        private void button3_Click(object sender, EventArgs e)
+        private void AcctButton_Click(object sender, EventArgs e)
         {
             _M_AccountInfo account = new _M_AccountInfo();
             account.Show();
+            this.Hide();
         }
     }
 }
