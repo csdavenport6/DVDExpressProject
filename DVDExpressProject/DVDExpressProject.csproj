@@ -174,8 +174,11 @@
     <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\CheckMemberStatus.resx">
       <DependentUpon>CheckMemberStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\EditAccountInfo.resx">
-      <DependentUpon>EditAccountInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\ManagePaymentMethods.resx">
+      <DependentUpon>ManagePaymentMethods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\UpdateAddress.resx">
+      <DependentUpon>UpdateAddress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member Pages\[M]AccountInfo.resx">
       <DependentUpon>[M]AccountInfo.cs</DependentUpon>
