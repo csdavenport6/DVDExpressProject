@@ -41,6 +41,8 @@
             this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.PaymentTypeText = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(285, 353);
+            this.label2.Location = new System.Drawing.Point(285, 540);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 37);
             this.label2.TabIndex = 1;
@@ -68,7 +70,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(285, 460);
+            this.label3.Location = new System.Drawing.Point(285, 438);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(244, 37);
             this.label3.TabIndex = 2;
@@ -83,14 +85,14 @@
             // 
             // CCNText
             // 
-            this.CCNText.Location = new System.Drawing.Point(540, 350);
+            this.CCNText.Location = new System.Drawing.Point(540, 537);
             this.CCNText.Name = "CCNText";
             this.CCNText.Size = new System.Drawing.Size(336, 31);
             this.CCNText.TabIndex = 4;
             // 
             // ExpirationText
             // 
-            this.ExpirationText.Location = new System.Drawing.Point(540, 457);
+            this.ExpirationText.Location = new System.Drawing.Point(540, 444);
             this.ExpirationText.Name = "ExpirationText";
             this.ExpirationText.Size = new System.Drawing.Size(336, 31);
             this.ExpirationText.TabIndex = 5;
@@ -157,11 +159,31 @@
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             // 
+            // PaymentTypeText
+            // 
+            this.PaymentTypeText.Location = new System.Drawing.Point(540, 345);
+            this.PaymentTypeText.Name = "PaymentTypeText";
+            this.PaymentTypeText.Size = new System.Drawing.Size(336, 31);
+            this.PaymentTypeText.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(285, 348);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(230, 37);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Payment Type:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // ManagePaymentMethods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1236, 971);
+            this.Controls.Add(this.PaymentTypeText);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.menuStrip1);
@@ -197,5 +219,7 @@
         private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.TextBox PaymentTypeText;
+        private System.Windows.Forms.Label label5;
     }
 }
