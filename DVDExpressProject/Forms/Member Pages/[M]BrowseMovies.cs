@@ -68,10 +68,5 @@ namespace DVDExpressProject.Forms.Member_Pages
             account.Show();
             this.Hide();
         }
-
-        private void AddToCartButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
