@@ -1,1 +1,109 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="S2T5" Class="DVDExpressDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=mis220.eil-server.cba.ua.edu;Initial Catalog=S2T5;Persist Security Info=True;User ID=bigal" SettingsObjectName="DVDExpressProject.Properties.Settings" SettingsPropertyName="S2T5ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="AccountID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MemStatus" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Balance" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaymentType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Account_AccountReward" Member="AccountRewards" ThisKey="AccountID" OtherKey="AccountID" Type="AccountReward" />
+      <Association Name="Account_Member" Member="Members" ThisKey="AccountID" OtherKey="AccountID" Type="Member" />
+      <Association Name="Account_Transaction" Member="Transactions" ThisKey="AccountID" OtherKey="AccountID" Type="Transaction" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountReward" Member="AccountRewards">
+    <Type Name="AccountReward">
+      <Column Name="AccountID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RewardID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Account_AccountReward" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
+      <Association Name="Reward_AccountReward" Member="Reward" ThisKey="RewardID" OtherKey="RewardId" Type="Reward" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Login" Member="Logins">
+    <Type Name="Login">
+      <Column Name="Username" Type="System.String" DbType="VarChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Member_Login" Member="Member" ThisKey="MemberID" OtherKey="MemberID" Type="Member" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Member" Member="Members">
+    <Type Name="Member">
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AccountID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(350)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(350)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Zip" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="Member_Login" Member="Logins" ThisKey="MemberID" OtherKey="MemberID" Type="Login" />
+      <Association Name="Member_Review" Member="Reviews" ThisKey="MemberID" OtherKey="MemberID" Type="Review" />
+      <Association Name="Member_Wishlist" Member="Wishlists" ThisKey="MemberID" OtherKey="MemberID" Type="Wishlist" />
+      <Association Name="Account_Member" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Movie" Member="Movies">
+    <Type Name="Movie">
+      <Column Name="MovieID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="ReleaseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RunTime" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Rating" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="DaysForRent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Movie_Review" Member="Reviews" ThisKey="MovieID" OtherKey="MovieID" Type="Review" />
+      <Association Name="Movie_Transaction" Member="Transactions" ThisKey="MovieID" OtherKey="MovieID" Type="Transaction" />
+      <Association Name="Movie_Wishlist" Member="Wishlists" ThisKey="MovieID" OtherKey="MovieID" Type="Wishlist" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Review" Member="Reviews">
+    <Type Name="Review">
+      <Column Name="ReviewID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MovieID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StarRating" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Association Name="Member_Review" Member="Member" ThisKey="MemberID" OtherKey="MemberID" Type="Member" IsForeignKey="true" />
+      <Association Name="Movie_Review" Member="Movie" ThisKey="MovieID" OtherKey="MovieID" Type="Movie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reward" Member="Rewards">
+    <Type Name="Reward">
+      <Column Name="RewardId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Discount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpirationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Reward_AccountReward" Member="AccountRewards" ThisKey="RewardId" OtherKey="RewardID" Type="AccountReward" />
+      <Association Name="Reward_Transaction" Member="Transactions" ThisKey="RewardId" OtherKey="RewardID" Type="Transaction" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transactions" Member="Transactions">
+    <Type Name="Transaction">
+      <Column Name="TransactionID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AccountID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MovieID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RewardID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
+      <Association Name="Account_Transaction" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
+      <Association Name="Movie_Transaction" Member="Movie" ThisKey="MovieID" OtherKey="MovieID" Type="Movie" IsForeignKey="true" />
+      <Association Name="Reward_Transaction" Member="Reward" ThisKey="RewardID" OtherKey="RewardId" Type="Reward" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Wishlist" Member="Wishlists">
+    <Type Name="Wishlist">
+      <Column Name="WishlistID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MovieID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Association Name="Member_Wishlist" Member="Member" ThisKey="MemberID" OtherKey="MemberID" Type="Member" IsForeignKey="true" />
+      <Association Name="Movie_Wishlist" Member="Movie" ThisKey="MovieID" OtherKey="MovieID" Type="Movie" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

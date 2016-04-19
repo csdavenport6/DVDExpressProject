@@ -18,5 +18,7 @@ namespace DVDExpressProject.Classes
         public int AvgRating { get; set; }
         //methods
         //------------------------
+
     }
+
 }

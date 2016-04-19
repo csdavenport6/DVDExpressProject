@@ -28,6 +28,8 @@ namespace DVDExpressProject.Forms.Member_Pages
 
         private void _M_BrowseMovies_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 's2T5DataSet.Movie' table. You can move, or remove it, as needed.
+            this.movieTableAdapter.Fill(this.s2T5DataSet.Movie);
 
         }
 
