@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_A_ManageAccts));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.AccountReportButton = new System.Windows.Forms.Button();
+            this.TransactionReportButton = new System.Windows.Forms.Button();
+            this.AccountListing = new System.Windows.Forms.ListBox();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.ReturnButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,15 +63,60 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // pictureBox1
+            // UpdateButton
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(780, 391);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 273);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.UpdateButton.Location = new System.Drawing.Point(180, 460);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(353, 79);
+            this.UpdateButton.TabIndex = 2;
+            this.UpdateButton.Text = "Update Customer Account";
+            this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // AccountReportButton
+            // 
+            this.AccountReportButton.Location = new System.Drawing.Point(180, 350);
+            this.AccountReportButton.Name = "AccountReportButton";
+            this.AccountReportButton.Size = new System.Drawing.Size(353, 79);
+            this.AccountReportButton.TabIndex = 3;
+            this.AccountReportButton.Text = "Customer Account Report";
+            this.AccountReportButton.UseVisualStyleBackColor = true;
+            // 
+            // TransactionReportButton
+            // 
+            this.TransactionReportButton.Location = new System.Drawing.Point(561, 350);
+            this.TransactionReportButton.Name = "TransactionReportButton";
+            this.TransactionReportButton.Size = new System.Drawing.Size(353, 79);
+            this.TransactionReportButton.TabIndex = 4;
+            this.TransactionReportButton.Text = "Produce Transaction Report";
+            this.TransactionReportButton.UseVisualStyleBackColor = true;
+            // 
+            // AccountListing
+            // 
+            this.AccountListing.FormattingEnabled = true;
+            this.AccountListing.ItemHeight = 25;
+            this.AccountListing.Location = new System.Drawing.Point(201, 107);
+            this.AccountListing.Name = "AccountListing";
+            this.AccountListing.Size = new System.Drawing.Size(679, 179);
+            this.AccountListing.TabIndex = 5;
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.Location = new System.Drawing.Point(561, 492);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(154, 47);
+            this.SaveButton.TabIndex = 6;
+            this.SaveButton.Text = "Save Update";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            // 
+            // ReturnButton
+            // 
+            this.ReturnButton.Location = new System.Drawing.Point(792, 570);
+            this.ReturnButton.Name = "ReturnButton";
+            this.ReturnButton.Size = new System.Drawing.Size(197, 61);
+            this.ReturnButton.TabIndex = 7;
+            this.ReturnButton.Text = "Return";
+            this.ReturnButton.UseVisualStyleBackColor = true;
             // 
             // _A_ManageAccts
             // 
@@ -76,14 +124,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1048, 663);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ReturnButton);
+            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.AccountListing);
+            this.Controls.Add(this.TransactionReportButton);
+            this.Controls.Add(this.AccountReportButton);
+            this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "_A_ManageAccts";
             this.Text = "_A_ManageAccts";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,6 +146,11 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button AccountReportButton;
+        private System.Windows.Forms.Button TransactionReportButton;
+        private System.Windows.Forms.ListBox AccountListing;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button ReturnButton;
     }
 }
