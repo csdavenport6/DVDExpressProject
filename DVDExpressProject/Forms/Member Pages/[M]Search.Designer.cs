@@ -34,8 +34,8 @@
             this.ViewWishlistButton = new System.Windows.Forms.Button();
             this.ViewAcctButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SearchBox = new System.Windows.Forms.TextBox();
+            this.MovieList = new System.Windows.Forms.DataGridView();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.runTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,10 +63,10 @@
             // 
             // BrowseButton
             // 
-            this.BrowseButton.Location = new System.Drawing.Point(10, 99);
-            this.BrowseButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.BrowseButton.Location = new System.Drawing.Point(14, 152);
+            this.BrowseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BrowseButton.Name = "BrowseButton";
-            this.BrowseButton.Size = new System.Drawing.Size(154, 74);
+            this.BrowseButton.Size = new System.Drawing.Size(230, 114);
             this.BrowseButton.TabIndex = 17;
             this.BrowseButton.Text = "Browse Movies";
             this.BrowseButton.UseVisualStyleBackColor = true;
@@ -74,10 +74,10 @@
             // 
             // ViewCartButton
             // 
-            this.ViewCartButton.Location = new System.Drawing.Point(10, 176);
-            this.ViewCartButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.ViewCartButton.Location = new System.Drawing.Point(14, 271);
+            this.ViewCartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewCartButton.Name = "ViewCartButton";
-            this.ViewCartButton.Size = new System.Drawing.Size(152, 65);
+            this.ViewCartButton.Size = new System.Drawing.Size(228, 100);
             this.ViewCartButton.TabIndex = 13;
             this.ViewCartButton.Text = "Cart";
             this.ViewCartButton.UseVisualStyleBackColor = true;
@@ -85,10 +85,10 @@
             // 
             // ViewWishlistButton
             // 
-            this.ViewWishlistButton.Location = new System.Drawing.Point(10, 244);
-            this.ViewWishlistButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.ViewWishlistButton.Location = new System.Drawing.Point(14, 376);
+            this.ViewWishlistButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewWishlistButton.Name = "ViewWishlistButton";
-            this.ViewWishlistButton.Size = new System.Drawing.Size(152, 65);
+            this.ViewWishlistButton.Size = new System.Drawing.Size(228, 100);
             this.ViewWishlistButton.TabIndex = 14;
             this.ViewWishlistButton.Text = "Wishlist";
             this.ViewWishlistButton.UseVisualStyleBackColor = true;
@@ -96,10 +96,10 @@
             // 
             // ViewAcctButton
             // 
-            this.ViewAcctButton.Location = new System.Drawing.Point(10, 313);
-            this.ViewAcctButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.ViewAcctButton.Location = new System.Drawing.Point(14, 481);
+            this.ViewAcctButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewAcctButton.Name = "ViewAcctButton";
-            this.ViewAcctButton.Size = new System.Drawing.Size(152, 65);
+            this.ViewAcctButton.Size = new System.Drawing.Size(228, 100);
             this.ViewAcctButton.TabIndex = 15;
             this.ViewAcctButton.Text = "Account";
             this.ViewAcctButton.UseVisualStyleBackColor = true;
@@ -108,39 +108,38 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(192, 129);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(288, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 18;
             this.label1.Text = "Search Inventory";
             // 
-            // textBox1
+            // SearchBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(282, 129);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 20);
-            this.textBox1.TabIndex = 19;
+            this.SearchBox.Location = new System.Drawing.Point(424, 199);
+            this.SearchBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SearchBox.Name = "SearchBox";
+            this.SearchBox.Size = new System.Drawing.Size(301, 26);
+            this.SearchBox.TabIndex = 19;
+            this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
             // 
-            // dataGridView1
+            // MovieList
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MovieList.AllowUserToOrderColumns = true;
+            this.MovieList.AutoGenerateColumns = false;
+            this.MovieList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MovieList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.titleDataGridViewTextBoxColumn,
             this.genreDataGridViewTextBoxColumn,
             this.runTimeDataGridViewTextBoxColumn,
             this.ratingDataGridViewTextBoxColumn,
             this.daysForRentDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.movieBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(194, 176);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(404, 232);
-            this.dataGridView1.TabIndex = 20;
+            this.MovieList.DataSource = this.movieBindingSource;
+            this.MovieList.Location = new System.Drawing.Point(292, 271);
+            this.MovieList.Name = "MovieList";
+            this.MovieList.RowTemplate.Height = 28;
+            this.MovieList.Size = new System.Drawing.Size(605, 357);
+            this.MovieList.TabIndex = 20;
             // 
             // titleDataGridViewTextBoxColumn
             // 
@@ -185,10 +184,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(184, 10);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(277, 15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(438, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(658, 154);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
@@ -199,10 +198,10 @@
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(10, 31);
-            this.SearchButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.SearchButton.Location = new System.Drawing.Point(16, 48);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(152, 65);
+            this.SearchButton.Size = new System.Drawing.Size(228, 100);
             this.SearchButton.TabIndex = 21;
             this.SearchButton.Text = "Search Movies";
             this.SearchButton.UseVisualStyleBackColor = true;
@@ -256,8 +255,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(632, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(948, 33);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -273,7 +272,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
@@ -285,12 +284,12 @@
             // 
             // _M_Search
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 450);
+            this.ClientSize = new System.Drawing.Size(948, 692);
             this.Controls.Add(this.SearchButton);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.MovieList);
+            this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BrowseButton);
             this.Controls.Add(this.ViewCartButton);
@@ -299,11 +298,11 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "_M_Search";
             this.Text = "_M_Search";
             this.Load += new System.EventHandler(this._M_Search_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MovieList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -321,8 +320,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox SearchBox;
+        private System.Windows.Forms.DataGridView MovieList;
         private S2T5DataSet s2T5DataSet;
         private System.Windows.Forms.BindingSource movieBindingSource;
         private S2T5DataSetTableAdapters.MovieTableAdapter movieTableAdapter;
