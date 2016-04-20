@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Linq;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -65,6 +66,30 @@ namespace DVDExpressProject.Forms.Member_Pages
             _M_AccountInfo account = new _M_AccountInfo();
             account.Show();
             this.Hide();
+        }
+
+        private void SearchBox_TextChanged(object sender, EventArgs e)
+        {
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Movie> Movies = db.GetTable<Movie>();
+            string searchText = SearchBox.Text;
+            var query =
+                from mov in Movies
+                where mov.Title.Contains(searchText)
+                select mov;
+
+
+            DataTable SearchedMovies = new DataTable();
+            SearchedMovies.Columns.Add("Title");
+            SearchedMovies.Columns.Add("Genre");
+            SearchedMovies.Columns.Add("Run Time");
+            SearchedMovies.Columns.Add("Rating");
+            SearchedMovies.Columns.Add("Days for rent");
+            foreach (var mov in query)
+            {
+                SearchedMovies.Rows.Add(mov.Title, mov.Genre, mov.RunTime, mov.Rating, mov.DaysForRent);
+            }
+            MovieList.DataSource = SearchedMovies;
         }
     }
 }
