@@ -50,7 +50,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).BeginInit();
@@ -60,10 +60,10 @@
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(16, 68);
-            this.SearchButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.SearchButton.Location = new System.Drawing.Point(8, 35);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(304, 125);
+            this.SearchButton.Size = new System.Drawing.Size(152, 65);
             this.SearchButton.TabIndex = 8;
             this.SearchButton.Text = "Search Movies";
             this.SearchButton.UseVisualStyleBackColor = true;
@@ -71,10 +71,10 @@
             // 
             // BrowseButton
             // 
-            this.BrowseButton.Location = new System.Drawing.Point(16, 199);
-            this.BrowseButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.BrowseButton.Location = new System.Drawing.Point(8, 103);
+            this.BrowseButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.BrowseButton.Name = "BrowseButton";
-            this.BrowseButton.Size = new System.Drawing.Size(307, 142);
+            this.BrowseButton.Size = new System.Drawing.Size(154, 74);
             this.BrowseButton.TabIndex = 9;
             this.BrowseButton.Text = "Browse Movies";
             this.BrowseButton.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // 
             // CartButton
             // 
-            this.CartButton.Location = new System.Drawing.Point(16, 348);
-            this.CartButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.CartButton.Location = new System.Drawing.Point(8, 181);
+            this.CartButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.CartButton.Name = "CartButton";
-            this.CartButton.Size = new System.Drawing.Size(304, 125);
+            this.CartButton.Size = new System.Drawing.Size(152, 65);
             this.CartButton.TabIndex = 5;
             this.CartButton.Text = "Cart";
             this.CartButton.UseVisualStyleBackColor = true;
@@ -93,10 +93,10 @@
             // 
             // WishlistButton
             // 
-            this.WishlistButton.Location = new System.Drawing.Point(16, 478);
-            this.WishlistButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.WishlistButton.Location = new System.Drawing.Point(8, 249);
+            this.WishlistButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.WishlistButton.Name = "WishlistButton";
-            this.WishlistButton.Size = new System.Drawing.Size(304, 125);
+            this.WishlistButton.Size = new System.Drawing.Size(152, 65);
             this.WishlistButton.TabIndex = 6;
             this.WishlistButton.Text = "Wishlist";
             this.WishlistButton.UseVisualStyleBackColor = true;
@@ -104,10 +104,10 @@
             // 
             // AcctButton
             // 
-            this.AcctButton.Location = new System.Drawing.Point(16, 610);
-            this.AcctButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.AcctButton.Location = new System.Drawing.Point(8, 317);
+            this.AcctButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.AcctButton.Name = "AcctButton";
-            this.AcctButton.Size = new System.Drawing.Size(304, 125);
+            this.AcctButton.Size = new System.Drawing.Size(152, 65);
             this.AcctButton.TabIndex = 7;
             this.AcctButton.Text = "Account";
             this.AcctButton.UseVisualStyleBackColor = true;
@@ -117,10 +117,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(693, 556);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(346, 289);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(434, 52);
+            this.label1.Size = new System.Drawing.Size(217, 26);
             this.label1.TabIndex = 13;
             this.label1.Text = "View Movie List Here";
             // 
@@ -128,20 +128,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(437, 256);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(218, 133);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 32);
+            this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 14;
             this.label2.Text = "Filter By: ";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(581, 256);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(290, 133);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(269, 33);
+            this.comboBox1.Size = new System.Drawing.Size(136, 21);
             this.comboBox1.TabIndex = 15;
             // 
             // dataGridView1
@@ -156,11 +156,11 @@
             this.ratingDataGridViewTextBoxColumn,
             this.daysForRentDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.movieBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(416, 348);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(208, 181);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(852, 442);
+            this.dataGridView1.Size = new System.Drawing.Size(426, 230);
             this.dataGridView1.TabIndex = 16;
             // 
             // titleDataGridViewTextBoxColumn
@@ -215,10 +215,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(416, 48);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(208, 25);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(877, 192);
+            this.pictureBox2.Size = new System.Drawing.Size(438, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -231,35 +231,38 @@
             this.helpMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1332, 42);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(666, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // aboutMenuItem
             // 
             this.aboutMenuItem.Name = "aboutMenuItem";
-            this.aboutMenuItem.Size = new System.Drawing.Size(92, 38);
+            this.aboutMenuItem.Size = new System.Drawing.Size(52, 22);
             this.aboutMenuItem.Text = "About";
+            this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
             // 
             // helpMenuItem
             // 
             this.helpMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fAQToolStripMenuItem});
+            this.FAQButton});
             this.helpMenuItem.Name = "helpMenuItem";
-            this.helpMenuItem.Size = new System.Drawing.Size(77, 38);
+            this.helpMenuItem.Size = new System.Drawing.Size(44, 22);
             this.helpMenuItem.Text = "Help";
             // 
-            // fAQToolStripMenuItem
+            // FAQButton
             // 
-            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
-            this.fAQToolStripMenuItem.Text = "FAQ";
+            this.FAQButton.Name = "FAQButton";
+            this.FAQButton.Size = new System.Drawing.Size(152, 22);
+            this.FAQButton.Text = "FAQ";
+            this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // _M_BrowseMovies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1332, 895);
+            this.ClientSize = new System.Drawing.Size(666, 465);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -272,7 +275,7 @@
             this.Controls.Add(this.AcctButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "_M_BrowseMovies";
             this.Text = "_M_BrowseMovies";
             this.Load += new System.EventHandler(this._M_BrowseMovies_Load);
@@ -310,6 +313,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem aboutMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FAQButton;
     }
 }

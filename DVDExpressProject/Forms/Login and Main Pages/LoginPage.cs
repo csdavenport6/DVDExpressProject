@@ -46,5 +46,23 @@ namespace DVDExpressProject
             CreateAcct createAcctPage = new CreateAcct();
             createAcctPage.Show();
         }
+
+        private void AdminLogin_Click(object sender, EventArgs e)
+        {
+            AdminMainPage homePage = new AdminMainPage();
+            homePage.Show();
+            MessageBox.Show("Login Succesful");
+            this.Hide();
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to DVDExpress. Created by Connor, Bobby, Joseph, and James.");
+        }
+
+        private void FAQButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please log in with your credentials or create an account. If you are an admin please click 'Admin Login' to be taken to another login form.");
+        }
     }
 }

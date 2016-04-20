@@ -12,6 +12,14 @@ namespace DVDExpressProject.Forms.Admin_Pages
 {
     public partial class _A_ManageInventory : Form
     {
+        private AdminMainPage adminPage;
+
+        public AdminMainPage AdminPage
+        {
+            get { return adminPage; }
+            set { adminPage = value; }
+        }
+
         public _A_ManageInventory()
         {
             InitializeComponent();
@@ -35,6 +43,22 @@ namespace DVDExpressProject.Forms.Admin_Pages
         private void _A_ManageInventory_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ReturnButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            adminPage.Show();
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to DVDExpress. Created by Connor, Bobby, Joseph, and James.");
+        }
+
+        private void FAQButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Admins are able to manage the inventory of DVDExpress.");
         }
     }
 }

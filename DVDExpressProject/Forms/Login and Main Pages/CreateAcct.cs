@@ -36,5 +36,20 @@ namespace DVDExpressProject.Forms.Login_and_Main_Pages
         {
 
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FAQButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please enter the required information to create a new account.");
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to DVDExpress. Created by Connor, Bobby, Joseph, and James.");
+        }
     }
 }

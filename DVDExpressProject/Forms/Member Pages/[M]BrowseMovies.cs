@@ -68,5 +68,15 @@ namespace DVDExpressProject.Forms.Member_Pages
             account.Show();
             this.Hide();
         }
+
+        private void aboutMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to DVDExpress. Created by Connor, Bobby, Joseph, and James.");
+        }
+
+        private void FAQButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This form allows the user to browse movies, there is also an included filter for genre type.");
+        }
     }
 }

@@ -162,6 +162,12 @@
     <None Include="DVDExpress.dbml.layout">
       <DependentUpon>DVDExpress.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="Forms\Admin Pages\[A]ManageAccts.resx">
+      <DependentUpon>[A]ManageAccts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Pages\[A]ManageInventory.resx">
+      <DependentUpon>[A]ManageInventory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login and Main Pages\AdminMainPage.resx">
       <DependentUpon>AdminMainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +192,9 @@
     <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\ManagePaymentMethods.resx">
       <DependentUpon>ManagePaymentMethods.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\Account Update Pages\UpdateAddress.resx">
+      <DependentUpon>UpdateAddress.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member Pages\[M]AccountInfo.resx">
       <DependentUpon>[M]AccountInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Member Pages\[M]ViewCart.resx">
       <DependentUpon>[M]ViewCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Member Pages\[M]ViewWishlists.resx">
+      <DependentUpon>[M]ViewWishlists.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

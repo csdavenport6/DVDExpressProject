@@ -21,5 +21,20 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
         {
 
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to DVDExpress. Created by Connor, Bobby, Joseph, and James.");
+        }
+
+        private void FAQButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This form lets the user to keep their address information current. Without a current address they may never recieve their movies.");
+        }
     }
 }
