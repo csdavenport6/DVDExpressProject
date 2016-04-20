@@ -30,9 +30,6 @@ namespace DVDExpressProject
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertAccount(Account instance);
-    partial void UpdateAccount(Account instance);
-    partial void DeleteAccount(Account instance);
     partial void InsertLogin(Login instance);
     partial void UpdateLogin(Login instance);
     partial void DeleteLogin(Login instance);
@@ -54,6 +51,9 @@ namespace DVDExpressProject
     partial void InsertWishlist(Wishlist instance);
     partial void UpdateWishlist(Wishlist instance);
     partial void DeleteWishlist(Wishlist instance);
+    partial void InsertAccount(Account instance);
+    partial void UpdateAccount(Account instance);
+    partial void DeleteAccount(Account instance);
     #endregion
 		
 		public DVDExpressDataContext() : 
@@ -84,14 +84,6 @@ namespace DVDExpressProject
 				base(connection, mappingSource)
 		{
 			OnCreated();
-		}
-		
-		public System.Data.Linq.Table<Account> Accounts
-		{
-			get
-			{
-				return this.GetTable<Account>();
-			}
 		}
 		
 		public System.Data.Linq.Table<AccountReward> AccountRewards
@@ -157,219 +149,13 @@ namespace DVDExpressProject
 				return this.GetTable<Wishlist>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Account")]
-	public partial class Account : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _AccountID;
-		
-		private string _MemStatus;
-		
-		private System.Nullable<decimal> _Balance;
-		
-		private System.Nullable<int> _CardNumber;
-		
-		private System.Nullable<bool> _PaymentType;
-		
-		private EntitySet<Member> _Members;
-		
-		private EntitySet<Transaction> _Transactions;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnAccountIDChanging(int value);
-    partial void OnAccountIDChanged();
-    partial void OnMemStatusChanging(string value);
-    partial void OnMemStatusChanged();
-    partial void OnBalanceChanging(System.Nullable<decimal> value);
-    partial void OnBalanceChanged();
-    partial void OnCardNumberChanging(System.Nullable<int> value);
-    partial void OnCardNumberChanged();
-    partial void OnPaymentTypeChanging(System.Nullable<bool> value);
-    partial void OnPaymentTypeChanged();
-    #endregion
-		
-		public Account()
-		{
-			this._Members = new EntitySet<Member>(new Action<Member>(this.attach_Members), new Action<Member>(this.detach_Members));
-			this._Transactions = new EntitySet<Transaction>(new Action<Transaction>(this.attach_Transactions), new Action<Transaction>(this.detach_Transactions));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int AccountID
+		public System.Data.Linq.Table<Account> Accounts
 		{
 			get
 			{
-				return this._AccountID;
+				return this.GetTable<Account>();
 			}
-			set
-			{
-				if ((this._AccountID != value))
-				{
-					this.OnAccountIDChanging(value);
-					this.SendPropertyChanging();
-					this._AccountID = value;
-					this.SendPropertyChanged("AccountID");
-					this.OnAccountIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemStatus", DbType="VarChar(250)")]
-		public string MemStatus
-		{
-			get
-			{
-				return this._MemStatus;
-			}
-			set
-			{
-				if ((this._MemStatus != value))
-				{
-					this.OnMemStatusChanging(value);
-					this.SendPropertyChanging();
-					this._MemStatus = value;
-					this.SendPropertyChanged("MemStatus");
-					this.OnMemStatusChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Balance", DbType="SmallMoney")]
-		public System.Nullable<decimal> Balance
-		{
-			get
-			{
-				return this._Balance;
-			}
-			set
-			{
-				if ((this._Balance != value))
-				{
-					this.OnBalanceChanging(value);
-					this.SendPropertyChanging();
-					this._Balance = value;
-					this.SendPropertyChanged("Balance");
-					this.OnBalanceChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CardNumber", DbType="Int")]
-		public System.Nullable<int> CardNumber
-		{
-			get
-			{
-				return this._CardNumber;
-			}
-			set
-			{
-				if ((this._CardNumber != value))
-				{
-					this.OnCardNumberChanging(value);
-					this.SendPropertyChanging();
-					this._CardNumber = value;
-					this.SendPropertyChanged("CardNumber");
-					this.OnCardNumberChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaymentType", DbType="Bit")]
-		public System.Nullable<bool> PaymentType
-		{
-			get
-			{
-				return this._PaymentType;
-			}
-			set
-			{
-				if ((this._PaymentType != value))
-				{
-					this.OnPaymentTypeChanging(value);
-					this.SendPropertyChanging();
-					this._PaymentType = value;
-					this.SendPropertyChanged("PaymentType");
-					this.OnPaymentTypeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Member", Storage="_Members", ThisKey="AccountID", OtherKey="AccountID")]
-		public EntitySet<Member> Members
-		{
-			get
-			{
-				return this._Members;
-			}
-			set
-			{
-				this._Members.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Transaction", Storage="_Transactions", ThisKey="AccountID", OtherKey="AccountID")]
-		public EntitySet<Transaction> Transactions
-		{
-			get
-			{
-				return this._Transactions;
-			}
-			set
-			{
-				this._Transactions.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Members(Member entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = this;
-		}
-		
-		private void detach_Members(Member entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = null;
-		}
-		
-		private void attach_Transactions(Transaction entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = this;
-		}
-		
-		private void detach_Transactions(Transaction entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = null;
 		}
 	}
 	
@@ -1708,11 +1494,11 @@ namespace DVDExpressProject
 		
 		private System.Nullable<decimal> _Total;
 		
-		private EntityRef<Account> _Account;
-		
 		private EntityRef<Movie> _Movie;
 		
 		private EntityRef<Reward> _Reward;
+		
+		private EntityRef<Account> _Account;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1736,9 +1522,9 @@ namespace DVDExpressProject
 		
 		public Transaction()
 		{
-			this._Account = default(EntityRef<Account>);
 			this._Movie = default(EntityRef<Movie>);
 			this._Reward = default(EntityRef<Reward>);
+			this._Account = default(EntityRef<Account>);
 			OnCreated();
 		}
 		
@@ -1894,40 +1680,6 @@ namespace DVDExpressProject
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Transaction", Storage="_Account", ThisKey="AccountID", OtherKey="AccountID", IsForeignKey=true)]
-		public Account Account
-		{
-			get
-			{
-				return this._Account.Entity;
-			}
-			set
-			{
-				Account previousValue = this._Account.Entity;
-				if (((previousValue != value) 
-							|| (this._Account.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Account.Entity = null;
-						previousValue.Transactions.Remove(this);
-					}
-					this._Account.Entity = value;
-					if ((value != null))
-					{
-						value.Transactions.Add(this);
-						this._AccountID = value.AccountID;
-					}
-					else
-					{
-						this._AccountID = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("Account");
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Movie_Transaction", Storage="_Movie", ThisKey="MovieID", OtherKey="MovieID", IsForeignKey=true)]
 		public Movie Movie
 		{
@@ -1992,6 +1744,40 @@ namespace DVDExpressProject
 						this._RewardID = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Reward");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Transaction", Storage="_Account", ThisKey="AccountID", OtherKey="AccountID", IsForeignKey=true)]
+		public Account Account
+		{
+			get
+			{
+				return this._Account.Entity;
+			}
+			set
+			{
+				Account previousValue = this._Account.Entity;
+				if (((previousValue != value) 
+							|| (this._Account.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Account.Entity = null;
+						previousValue.Transactions.Remove(this);
+					}
+					this._Account.Entity = value;
+					if ((value != null))
+					{
+						value.Transactions.Add(this);
+						this._AccountID = value.AccountID;
+					}
+					else
+					{
+						this._AccountID = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Account");
 				}
 			}
 		}
@@ -2230,6 +2016,268 @@ namespace DVDExpressProject
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Account")]
+	public partial class Account : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _AccountID;
+		
+		private string _MemStatus;
+		
+		private System.Nullable<decimal> _Balance;
+		
+		private System.Nullable<long> _CardNumber;
+		
+		private System.Nullable<bool> _PaymentType;
+		
+		private System.Nullable<System.DateTime> _ExpirationDate;
+		
+		private System.Nullable<int> _CVV;
+		
+		private EntitySet<Member> _Members;
+		
+		private EntitySet<Transaction> _Transactions;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnAccountIDChanging(int value);
+    partial void OnAccountIDChanged();
+    partial void OnMemStatusChanging(string value);
+    partial void OnMemStatusChanged();
+    partial void OnBalanceChanging(System.Nullable<decimal> value);
+    partial void OnBalanceChanged();
+    partial void OnCardNumberChanging(System.Nullable<long> value);
+    partial void OnCardNumberChanged();
+    partial void OnPaymentTypeChanging(System.Nullable<bool> value);
+    partial void OnPaymentTypeChanged();
+    partial void OnExpirationDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnExpirationDateChanged();
+    partial void OnCVVChanging(System.Nullable<int> value);
+    partial void OnCVVChanged();
+    #endregion
+		
+		public Account()
+		{
+			this._Members = new EntitySet<Member>(new Action<Member>(this.attach_Members), new Action<Member>(this.detach_Members));
+			this._Transactions = new EntitySet<Transaction>(new Action<Transaction>(this.attach_Transactions), new Action<Transaction>(this.detach_Transactions));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int AccountID
+		{
+			get
+			{
+				return this._AccountID;
+			}
+			set
+			{
+				if ((this._AccountID != value))
+				{
+					this.OnAccountIDChanging(value);
+					this.SendPropertyChanging();
+					this._AccountID = value;
+					this.SendPropertyChanged("AccountID");
+					this.OnAccountIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MemStatus", DbType="VarChar(250)")]
+		public string MemStatus
+		{
+			get
+			{
+				return this._MemStatus;
+			}
+			set
+			{
+				if ((this._MemStatus != value))
+				{
+					this.OnMemStatusChanging(value);
+					this.SendPropertyChanging();
+					this._MemStatus = value;
+					this.SendPropertyChanged("MemStatus");
+					this.OnMemStatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Balance", DbType="SmallMoney")]
+		public System.Nullable<decimal> Balance
+		{
+			get
+			{
+				return this._Balance;
+			}
+			set
+			{
+				if ((this._Balance != value))
+				{
+					this.OnBalanceChanging(value);
+					this.SendPropertyChanging();
+					this._Balance = value;
+					this.SendPropertyChanged("Balance");
+					this.OnBalanceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CardNumber", DbType="BigInt")]
+		public System.Nullable<long> CardNumber
+		{
+			get
+			{
+				return this._CardNumber;
+			}
+			set
+			{
+				if ((this._CardNumber != value))
+				{
+					this.OnCardNumberChanging(value);
+					this.SendPropertyChanging();
+					this._CardNumber = value;
+					this.SendPropertyChanged("CardNumber");
+					this.OnCardNumberChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaymentType", DbType="Bit")]
+		public System.Nullable<bool> PaymentType
+		{
+			get
+			{
+				return this._PaymentType;
+			}
+			set
+			{
+				if ((this._PaymentType != value))
+				{
+					this.OnPaymentTypeChanging(value);
+					this.SendPropertyChanging();
+					this._PaymentType = value;
+					this.SendPropertyChanged("PaymentType");
+					this.OnPaymentTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ExpirationDate", DbType="Date")]
+		public System.Nullable<System.DateTime> ExpirationDate
+		{
+			get
+			{
+				return this._ExpirationDate;
+			}
+			set
+			{
+				if ((this._ExpirationDate != value))
+				{
+					this.OnExpirationDateChanging(value);
+					this.SendPropertyChanging();
+					this._ExpirationDate = value;
+					this.SendPropertyChanged("ExpirationDate");
+					this.OnExpirationDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CVV", DbType="Int")]
+		public System.Nullable<int> CVV
+		{
+			get
+			{
+				return this._CVV;
+			}
+			set
+			{
+				if ((this._CVV != value))
+				{
+					this.OnCVVChanging(value);
+					this.SendPropertyChanging();
+					this._CVV = value;
+					this.SendPropertyChanged("CVV");
+					this.OnCVVChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Member", Storage="_Members", ThisKey="AccountID", OtherKey="AccountID")]
+		public EntitySet<Member> Members
+		{
+			get
+			{
+				return this._Members;
+			}
+			set
+			{
+				this._Members.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Transaction", Storage="_Transactions", ThisKey="AccountID", OtherKey="AccountID")]
+		public EntitySet<Transaction> Transactions
+		{
+			get
+			{
+				return this._Transactions;
+			}
+			set
+			{
+				this._Transactions.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Members(Member entity)
+		{
+			this.SendPropertyChanging();
+			entity.Account = this;
+		}
+		
+		private void detach_Members(Member entity)
+		{
+			this.SendPropertyChanging();
+			entity.Account = null;
+		}
+		
+		private void attach_Transactions(Transaction entity)
+		{
+			this.SendPropertyChanging();
+			entity.Account = this;
+		}
+		
+		private void detach_Transactions(Transaction entity)
+		{
+			this.SendPropertyChanging();
+			entity.Account = null;
 		}
 	}
 }

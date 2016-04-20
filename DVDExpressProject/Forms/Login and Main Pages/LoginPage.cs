@@ -29,10 +29,10 @@ namespace DVDExpressProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-           MemberMainPage homePage = new MemberMainPage();
-           homePage.Show();
-           MessageBox.Show("Login Succesful");
-           this.Hide();
+            MemberMainPage homePage = new MemberMainPage();
+            homePage.Show();
+            MessageBox.Show("Login Succesful");
+            this.Hide();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -40,10 +40,6 @@ namespace DVDExpressProject
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void CreateAcctButton_Click(object sender, EventArgs e)
         {
