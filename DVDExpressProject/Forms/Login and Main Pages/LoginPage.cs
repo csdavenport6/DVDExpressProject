@@ -40,10 +40,6 @@ namespace DVDExpressProject
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void CreateAcctButton_Click(object sender, EventArgs e)
         {

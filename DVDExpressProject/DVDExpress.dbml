@@ -1,23 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="S2T5" Class="DVDExpressDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=mis220.eil-server.cba.ua.edu;Initial Catalog=S2T5;Persist Security Info=True;User ID=bigal" SettingsObjectName="DVDExpressProject.Properties.Settings" SettingsPropertyName="S2T5ConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Account" Member="Accounts">
-    <Type Name="Account">
-      <Column Name="AccountID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MemStatus" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
-      <Column Name="Balance" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
-      <Column Name="CardNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="PaymentType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="Account_AccountReward" Member="AccountRewards" ThisKey="AccountID" OtherKey="AccountID" Type="AccountReward" />
-      <Association Name="Account_Member" Member="Members" ThisKey="AccountID" OtherKey="AccountID" Type="Member" />
-      <Association Name="Account_Transaction" Member="Transactions" ThisKey="AccountID" OtherKey="AccountID" Type="Transaction" />
-    </Type>
-  </Table>
   <Table Name="dbo.AccountReward" Member="AccountRewards">
     <Type Name="AccountReward">
       <Column Name="AccountID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="RewardID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Account_AccountReward" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
       <Association Name="Reward_AccountReward" Member="Reward" ThisKey="RewardID" OtherKey="RewardId" Type="Reward" IsForeignKey="true" />
+      <Association Name="Account_AccountReward" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Login" Member="Logins">
@@ -91,9 +79,9 @@
       <Column Name="RentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="DueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Total" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
-      <Association Name="Account_Transaction" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
       <Association Name="Movie_Transaction" Member="Movie" ThisKey="MovieID" OtherKey="MovieID" Type="Movie" IsForeignKey="true" />
       <Association Name="Reward_Transaction" Member="Reward" ThisKey="RewardID" OtherKey="RewardId" Type="Reward" IsForeignKey="true" />
+      <Association Name="Account_Transaction" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Wishlist" Member="Wishlists">
@@ -104,6 +92,20 @@
       <Column Name="Title" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
       <Association Name="Member_Wishlist" Member="Member" ThisKey="MemberID" OtherKey="MemberID" Type="Member" IsForeignKey="true" />
       <Association Name="Movie_Wishlist" Member="Movie" ThisKey="MovieID" OtherKey="MovieID" Type="Movie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="AccountID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MemStatus" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Balance" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PaymentType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ExpirationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CVV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Account_AccountReward" Member="AccountRewards" ThisKey="AccountID" OtherKey="AccountID" Type="AccountReward" />
+      <Association Name="Account_Member" Member="Members" ThisKey="AccountID" OtherKey="AccountID" Type="Member" />
+      <Association Name="Account_Transaction" Member="Transactions" ThisKey="AccountID" OtherKey="AccountID" Type="Transaction" />
     </Type>
   </Table>
 </Database>

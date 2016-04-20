@@ -71,7 +71,7 @@
             this.UpdateButton.TabIndex = 2;
             this.UpdateButton.Text = "Update Customer Account";
             this.UpdateButton.UseVisualStyleBackColor = true;
-            this.UpdateButton.Click += new System.EventHandler(this.button1_Click);
+
             // 
             // AccountReportButton
             // 
