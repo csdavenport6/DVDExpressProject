@@ -26,12 +26,6 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
             InitializeComponent();
         }
 
-
-        private void CancelButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void AboutButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Welcome to DVDExpress. Created by Connor, Bobby, Joseph, and James.");
@@ -40,6 +34,11 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
         private void FAQButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Here you can change your password. Type your old password followed by your new password twice as verification.");
+        }
+
+        private void ReturnButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
