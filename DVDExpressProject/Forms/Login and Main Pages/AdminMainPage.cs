@@ -43,5 +43,10 @@ namespace DVDExpressProject.Forms
         {
             MessageBox.Show("This form allows the admin to enter into either the manage accounts page, or the manage inventory page.");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
