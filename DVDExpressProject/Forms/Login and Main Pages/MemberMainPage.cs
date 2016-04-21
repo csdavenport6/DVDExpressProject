@@ -13,6 +13,7 @@ namespace DVDExpressProject.Forms
 {
     public partial class MemberMainPage : Form
     {
+        public Member userAccount { get; set; }
         public MemberMainPage()
         {
             InitializeComponent();
@@ -61,6 +62,11 @@ namespace DVDExpressProject.Forms
         private void FAQButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This form is the main page members see when they login. From here they can go to any of the other various forms.");
+        }
+
+        private void testbutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(userAccount.FirstName + ' ' + userAccount.LastName);
         }
     }
 }

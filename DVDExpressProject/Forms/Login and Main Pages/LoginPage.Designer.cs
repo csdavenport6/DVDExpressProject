@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PasswordBox = new System.Windows.Forms.TextBox();
             this.AdminLogin = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.LoginButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.CreateAcctButton = new System.Windows.Forms.Button();
@@ -100,18 +100,18 @@
             this.AdminLogin.UseVisualStyleBackColor = true;
             this.AdminLogin.Click += new System.EventHandler(this.AdminLogin_Click);
             // 
-            // button3
+            // LoginButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(243, 342);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(345, 50);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Login";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.LoginButton.BackColor = System.Drawing.Color.Transparent;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.Location = new System.Drawing.Point(243, 342);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(345, 50);
+            this.LoginButton.TabIndex = 7;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -190,7 +190,7 @@
             this.Controls.Add(this.CreateAcctButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.AdminLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PasswordBox);
@@ -216,7 +216,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.Button AdminLogin;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button CreateAcctButton;
