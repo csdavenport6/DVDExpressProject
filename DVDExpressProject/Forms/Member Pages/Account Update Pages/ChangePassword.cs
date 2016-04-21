@@ -12,7 +12,7 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
 {
     public partial class ChangePassword : Form
     {
-
+        public Member userAccount { get; set; }
         private _M_AccountInfo mAccInfo;
 
         public _M_AccountInfo MAccInfo
@@ -40,6 +40,11 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
         private void FAQButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Here you can change your password. Type your old password followed by your new password twice as verification.");
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

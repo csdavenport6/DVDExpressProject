@@ -12,6 +12,7 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
 {
     public partial class ManagePaymentMethods : Form
     {
+        public Member userAccount { get; set; }
         public ManagePaymentMethods()
         {
             InitializeComponent();
