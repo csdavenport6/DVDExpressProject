@@ -142,5 +142,62 @@ namespace DVDExpressProject.Forms.Member_Pages
             db.SubmitChanges();
             MessageBox.Show("Movie Added to Wishlist!");
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddToCart_Click(object sender, EventArgs e)
+        {
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Movie> Movies = db.GetTable<Movie>();
+            Table<Transaction> Transactions = db.GetTable<Transaction>();
+
+            var getTransactions =
+                from transaction in Transactions
+                where (transaction.AccountID == userAccount.AccountID && transaction.RentDate == null)
+                select transaction;
+
+            var getTID =
+                from transaction in Transactions
+                orderby transaction.TransactionID descending
+                select transaction.TransactionID;
+
+            int newTID = getTID.First() + 1;
+
+            var getCorrectMovie =
+                from movie in Movies
+                where movie.Title == MovieList.SelectedCells[0].Value.ToString()
+                select movie;
+
+            Transaction newTransaction = new Transaction
+            {
+                TransactionID = 0,
+                AccountID = userAccount.AccountID,
+                MovieID = null,
+                RewardID = null,
+                RentDate = null,
+                DueDate = null,
+                Total = null
+            };
+
+            foreach (Transaction transaction in getTransactions)
+            {
+                newTransaction.TransactionID = transaction.TransactionID;
+                if (!transaction.TransactionID.ToString().Any())
+                {
+                    newTransaction.TransactionID = newTID;
+                }
+                foreach(Movie movie in getCorrectMovie)
+                {
+                    newTransaction.MovieID = movie.MovieID;
+                }
+            }
+            db.Transactions.InsertOnSubmit(newTransaction);
+            db.SubmitChanges();
+            MessageBox.Show("Movie Added to Cart!");
+
+        }
     }
 }

@@ -58,7 +58,7 @@
             this.WishlistBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.AddToWishlist = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.AddToCart = new System.Windows.Forms.Button();
             this.movieBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.MovieList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
@@ -327,14 +327,15 @@
             this.AddToWishlist.UseVisualStyleBackColor = true;
             this.AddToWishlist.Click += new System.EventHandler(this.AddToWishlist_Click);
             // 
-            // button5
+            // AddToCart
             // 
-            this.button5.Location = new System.Drawing.Point(762, 603);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(166, 84);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "Add movie to cart";
-            this.button5.UseVisualStyleBackColor = true;
+            this.AddToCart.Location = new System.Drawing.Point(762, 603);
+            this.AddToCart.Name = "AddToCart";
+            this.AddToCart.Size = new System.Drawing.Size(166, 84);
+            this.AddToCart.TabIndex = 26;
+            this.AddToCart.Text = "Add movie to cart";
+            this.AddToCart.UseVisualStyleBackColor = true;
+            this.AddToCart.Click += new System.EventHandler(this.AddToCart_Click);
             // 
             // movieBindingSource1
             // 
@@ -348,7 +349,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(991, 697);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.AddToCart);
             this.Controls.Add(this.AddToWishlist);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.WishlistBox);
@@ -404,7 +405,7 @@
         private System.Windows.Forms.ListBox WishlistBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button AddToWishlist;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button AddToCart;
         private System.Windows.Forms.BindingSource movieBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn DaysForRent;
         private System.Windows.Forms.DataGridViewTextBoxColumn ratingDataGridViewTextBoxColumn;

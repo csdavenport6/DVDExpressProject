@@ -33,11 +33,7 @@
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
-            this.UpdateButton = new System.Windows.Forms.Button();
             this.AccountReportButton = new System.Windows.Forms.Button();
-            this.TransactionReportButton = new System.Windows.Forms.Button();
-            this.AccountListing = new System.Windows.Forms.ListBox();
-            this.SaveButton = new System.Windows.Forms.Button();
             this.ReturnButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -77,50 +73,15 @@
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
-            // UpdateButton
-            // 
-            this.UpdateButton.Location = new System.Drawing.Point(135, 368);
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(264, 63);
-            this.UpdateButton.TabIndex = 2;
-            this.UpdateButton.Text = "Update Customer Account";
-            this.UpdateButton.UseVisualStyleBackColor = true;
-            // 
             // AccountReportButton
             // 
-            this.AccountReportButton.Location = new System.Drawing.Point(135, 280);
+            this.AccountReportButton.Location = new System.Drawing.Point(291, 266);
             this.AccountReportButton.Name = "AccountReportButton";
             this.AccountReportButton.Size = new System.Drawing.Size(264, 63);
             this.AccountReportButton.TabIndex = 3;
             this.AccountReportButton.Text = "Customer Account Report";
             this.AccountReportButton.UseVisualStyleBackColor = true;
-            // 
-            // TransactionReportButton
-            // 
-            this.TransactionReportButton.Location = new System.Drawing.Point(420, 280);
-            this.TransactionReportButton.Name = "TransactionReportButton";
-            this.TransactionReportButton.Size = new System.Drawing.Size(264, 63);
-            this.TransactionReportButton.TabIndex = 4;
-            this.TransactionReportButton.Text = "Produce Transaction Report";
-            this.TransactionReportButton.UseVisualStyleBackColor = true;
-            // 
-            // AccountListing
-            // 
-            this.AccountListing.FormattingEnabled = true;
-            this.AccountListing.ItemHeight = 20;
-            this.AccountListing.Location = new System.Drawing.Point(150, 86);
-            this.AccountListing.Name = "AccountListing";
-            this.AccountListing.Size = new System.Drawing.Size(511, 144);
-            this.AccountListing.TabIndex = 5;
-            // 
-            // SaveButton
-            // 
-            this.SaveButton.Location = new System.Drawing.Point(420, 368);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(264, 63);
-            this.SaveButton.TabIndex = 6;
-            this.SaveButton.Text = "Save Update";
-            this.SaveButton.UseVisualStyleBackColor = true;
+            this.AccountReportButton.Click += new System.EventHandler(this.AccountReportButton_Click);
             // 
             // ReturnButton
             // 
@@ -141,11 +102,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(786, 530);
             this.Controls.Add(this.ReturnButton);
-            this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.AccountListing);
-            this.Controls.Add(this.TransactionReportButton);
             this.Controls.Add(this.AccountReportButton);
-            this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.menuStrip1);
             this.Name = "_A_ManageAccts";
             this.Text = "Manage Accounts";
@@ -161,11 +118,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem AboutButton;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button AccountReportButton;
-        private System.Windows.Forms.Button TransactionReportButton;
-        private System.Windows.Forms.ListBox AccountListing;
-        private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button ReturnButton;
         private System.Windows.Forms.ToolStripMenuItem FAQButton;
     }

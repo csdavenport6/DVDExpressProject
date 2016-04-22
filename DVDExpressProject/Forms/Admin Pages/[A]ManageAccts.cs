@@ -42,5 +42,11 @@ namespace DVDExpressProject.Forms.Admin_Pages
         {
             MessageBox.Show("Admins can manage customer accounts, and show transaction reports.");
         }
+
+        private void AccountReportButton_Click(object sender, EventArgs e)
+        {
+            CustAcctReport custAcctReport = new CustAcctReport();
+            custAcctReport.Show();
+        }
     }
 }

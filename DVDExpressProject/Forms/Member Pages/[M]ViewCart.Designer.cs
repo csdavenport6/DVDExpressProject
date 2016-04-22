@@ -40,8 +40,10 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.MovieList = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MovieList)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -119,7 +121,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(930, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(1009, 35);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -155,13 +157,27 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
+            // MovieList
+            // 
+            this.MovieList.AllowUserToAddRows = false;
+            this.MovieList.AllowUserToDeleteRows = false;
+            this.MovieList.AllowUserToOrderColumns = true;
+            this.MovieList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MovieList.Location = new System.Drawing.Point(264, 229);
+            this.MovieList.Name = "MovieList";
+            this.MovieList.ReadOnly = true;
+            this.MovieList.RowTemplate.Height = 28;
+            this.MovieList.Size = new System.Drawing.Size(656, 357);
+            this.MovieList.TabIndex = 25;
+            // 
             // _M_ViewCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(930, 690);
+            this.ClientSize = new System.Drawing.Size(1009, 737);
+            this.Controls.Add(this.MovieList);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -176,6 +192,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MovieList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +211,6 @@
         private System.Windows.Forms.ToolStripMenuItem AboutButton;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FAQButton;
+        private System.Windows.Forms.DataGridView MovieList;
     }
 }
