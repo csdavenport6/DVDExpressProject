@@ -33,7 +33,6 @@
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
-            this.ViewButton = new System.Windows.Forms.Button();
             this.EditButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
@@ -79,14 +78,7 @@
             // 
             // ViewButton
             // 
-            this.ViewButton.Location = new System.Drawing.Point(360, 121);
-            this.ViewButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(300, 73);
-            this.ViewButton.TabIndex = 2;
-            this.ViewButton.Text = "View Current Inventory";
-            this.ViewButton.UseVisualStyleBackColor = true;
-            this.ViewButton.Click += new System.EventHandler(this.button1_Click);
+
             // 
             // EditButton
             // 
