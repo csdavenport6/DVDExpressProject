@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Linq;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,7 +45,37 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            string newPassword = ConfirmPasswordEntry.Text;
+            string oldPassword = OldPasswordEntry.Text;
 
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Login> Logins = db.GetTable<Login>();
+
+            if (newPassword != NewPasswordEntry.Text)
+            {
+                MessageBox.Show("Error: New passwords don't match.");
+                return;
+            }
+
+            var query =
+                from login in Logins
+                where login.MemberID == userAccount.MemberID
+                select login;
+            
+            foreach(Login login in query)
+            {
+                if (login.Password == oldPassword)
+                {
+                    login.Password = newPassword;
+                }
+                else
+                {
+                    MessageBox.Show("Error: Old password incorrect.");
+                    return;
+                }
+            }
+            db.SubmitChanges();
+            MessageBox.Show("Password Updated!");
         }
     }
 }

@@ -33,7 +33,6 @@
       <Association Name="Member_Login" Member="Logins" ThisKey="MemberID" OtherKey="MemberID" Type="Login" />
       <Association Name="Member_Review" Member="Reviews" ThisKey="MemberID" OtherKey="MemberID" Type="Review" />
       <Association Name="Member_Wishlist" Member="Wishlists" ThisKey="MemberID" OtherKey="MemberID" Type="Wishlist" />
-      <Association Name="Account_Member" Member="Account" ThisKey="AccountID" OtherKey="AccountID" Type="Account" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Movie" Member="Movies">
@@ -101,10 +100,9 @@
       <Column Name="Balance" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
       <Column Name="CardNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="PaymentType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="ExpirationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ExpirationDate" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
       <Column Name="CVV" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Account_AccountReward" Member="AccountRewards" ThisKey="AccountID" OtherKey="AccountID" Type="AccountReward" />
-      <Association Name="Account_Member" Member="Members" ThisKey="AccountID" OtherKey="AccountID" Type="Member" />
       <Association Name="Account_Transaction" Member="Transactions" ThisKey="AccountID" OtherKey="AccountID" Type="Transaction" />
     </Type>
   </Table>

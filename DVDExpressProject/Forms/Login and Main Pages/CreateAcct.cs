@@ -131,7 +131,7 @@ namespace DVDExpressProject.Forms.Login_and_Main_Pages
                 Balance = 0,
                 CardNumber = newCardNo,
                 PaymentType = true,
-                ExpirationDate = null,
+                ExpirationDate = ExpirDateEntry.Text,
                 CVV = newCVV,     
             };
             //submit changes to DB

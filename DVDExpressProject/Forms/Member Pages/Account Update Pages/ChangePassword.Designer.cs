@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.OldPasswordEntry = new System.Windows.Forms.TextBox();
+            this.NewPasswordEntry = new System.Windows.Forms.TextBox();
+            this.ConfirmPasswordEntry = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,26 +74,26 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirm password:";
             // 
-            // textBox1
+            // OldPasswordEntry
             // 
-            this.textBox1.Location = new System.Drawing.Point(186, 160);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 26);
-            this.textBox1.TabIndex = 3;
+            this.OldPasswordEntry.Location = new System.Drawing.Point(186, 160);
+            this.OldPasswordEntry.Name = "OldPasswordEntry";
+            this.OldPasswordEntry.Size = new System.Drawing.Size(230, 26);
+            this.OldPasswordEntry.TabIndex = 3;
             // 
-            // textBox2
+            // NewPasswordEntry
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 254);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 26);
-            this.textBox2.TabIndex = 4;
+            this.NewPasswordEntry.Location = new System.Drawing.Point(186, 254);
+            this.NewPasswordEntry.Name = "NewPasswordEntry";
+            this.NewPasswordEntry.Size = new System.Drawing.Size(230, 26);
+            this.NewPasswordEntry.TabIndex = 4;
             // 
-            // textBox3
+            // ConfirmPasswordEntry
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 342);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(230, 26);
-            this.textBox3.TabIndex = 5;
+            this.ConfirmPasswordEntry.Location = new System.Drawing.Point(190, 342);
+            this.ConfirmPasswordEntry.Name = "ConfirmPasswordEntry";
+            this.ConfirmPasswordEntry.Size = new System.Drawing.Size(230, 26);
+            this.ConfirmPasswordEntry.TabIndex = 5;
             // 
             // menuStrip1
             // 
@@ -169,9 +169,9 @@
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ConfirmPasswordEntry);
+            this.Controls.Add(this.NewPasswordEntry);
+            this.Controls.Add(this.OldPasswordEntry);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -189,9 +189,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox OldPasswordEntry;
+        private System.Windows.Forms.TextBox NewPasswordEntry;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem AboutButton;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
@@ -199,5 +198,6 @@
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ConfirmPasswordEntry;
     }
 }

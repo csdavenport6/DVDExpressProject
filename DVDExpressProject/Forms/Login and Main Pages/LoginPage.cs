@@ -35,7 +35,7 @@ namespace DVDExpressProject
             Table<Member> Members = db.GetTable<Member>();
             string username = UsernameBox.Text;
             string password = PasswordBox.Text;
-
+            bool loginSuccessful = false;
             var loginQuery =
                 from login in db.Logins
                 where (login.Username == username && login.Password == password)
@@ -55,11 +55,12 @@ namespace DVDExpressProject
                     homePage.userAccount = account;
                     homePage.Show();
                     MessageBox.Show("Login Succesful");
+                    loginSuccessful = true;
                     this.Hide();
                 }
             }
-
-            MessageBox.Show("Incorrect Username or Password.");
+            if (loginSuccessful == false)
+                MessageBox.Show("Incorrect Username or Password.");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
