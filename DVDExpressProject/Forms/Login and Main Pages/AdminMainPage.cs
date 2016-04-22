@@ -14,6 +14,14 @@ namespace DVDExpressProject.Forms
     public partial class AdminMainPage : Form
     {
         public Member adminAccount { get; set; }
+
+        private Form1 homePage;
+
+        public Form1 HomePage
+        {
+            get { return homePage; }
+            set { homePage = value; }
+        }
         public AdminMainPage()
         {
             InitializeComponent();
@@ -45,9 +53,12 @@ namespace DVDExpressProject.Forms
             MessageBox.Show("This form allows the admin to enter into either the manage accounts page, or the manage inventory page.");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ReturnButton_Click(object sender, EventArgs e)
         {
-
+            Form1 loginPage = new Form1();
+            loginPage.Show();
+            this.Close();
+            
         }
     }
 }
