@@ -74,6 +74,18 @@
     <Compile Include="Forms\Admin Pages\DeleteMovie.Designer.cs">
       <DependentUpon>DeleteMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin Pages\MovieReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\MovieReport.Designer.cs">
+      <DependentUpon>MovieReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\TransReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Pages\TransReport.Designer.cs">
+      <DependentUpon>TransReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin Pages\UpdateMovie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +206,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Pages\DeleteMovie.resx">
       <DependentUpon>DeleteMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Pages\MovieReport.resx">
+      <DependentUpon>MovieReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Pages\TransReport.resx">
+      <DependentUpon>TransReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Pages\UpdateMovie.resx">
       <DependentUpon>UpdateMovie.cs</DependentUpon>

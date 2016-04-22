@@ -57,18 +57,21 @@
             // MemberList
             // 
             this.MemberList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MemberList.Location = new System.Drawing.Point(12, 12);
+            this.MemberList.Location = new System.Drawing.Point(16, 15);
+            this.MemberList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MemberList.Name = "MemberList";
             this.MemberList.RowTemplate.Height = 28;
-            this.MemberList.Size = new System.Drawing.Size(862, 721);
+            this.MemberList.Size = new System.Drawing.Size(1149, 901);
             this.MemberList.TabIndex = 0;
+            this.MemberList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MemberList_CellContentClick);
             // 
             // CustAcctReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 745);
+            this.ClientSize = new System.Drawing.Size(1181, 931);
             this.Controls.Add(this.MemberList);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CustAcctReport";
             this.Text = "CustAcctReport";
             this.Load += new System.EventHandler(this.CustAcctReport_Load);

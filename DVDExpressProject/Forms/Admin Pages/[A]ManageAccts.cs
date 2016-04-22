@@ -48,5 +48,11 @@ namespace DVDExpressProject.Forms.Admin_Pages
             CustAcctReport custAcctReport = new CustAcctReport();
             custAcctReport.Show();
         }
+
+        private void TransReportButton_Click(object sender, EventArgs e)
+        {
+            TransReport transReport = new TransReport();
+            transReport.Show();
+        }
     }
 }

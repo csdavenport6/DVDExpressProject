@@ -65,5 +65,11 @@ namespace DVDExpressProject.Forms.Admin_Pages
             DeleteMovie deleteMoviePage = new DeleteMovie();
             deleteMoviePage.Show();
         }
+
+        private void ViewInventoryButton_Click(object sender, EventArgs e)
+        {
+            MovieReport movieReport = new MovieReport();
+            movieReport.Show();
+        }
     }
 }

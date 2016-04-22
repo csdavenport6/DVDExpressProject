@@ -46,5 +46,10 @@ namespace DVDExpressProject.Forms.Admin_Pages
             }
             MemberList.DataSource = memberList;
         }
+
+        private void MemberList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
