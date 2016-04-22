@@ -12,6 +12,7 @@ namespace DVDExpressProject.Forms.Member_Pages
 {
     public partial class _M_ViewWishlists : Form
     {
+        public Member userAccount { get; set; }
         private _M_AccountInfo mAccInfo;
 
         public _M_AccountInfo MAccInfo
@@ -29,15 +30,11 @@ namespace DVDExpressProject.Forms.Member_Pages
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         //Search
         private void button4_Click(object sender, EventArgs e)
         {
             _M_Search search = new _M_Search();
+            search.userAccount = this.userAccount;
             search.Show();
             this.Hide();
         }
@@ -46,6 +43,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void button5_Click(object sender, EventArgs e)
         {
             _M_BrowseMovies browse = new _M_BrowseMovies();
+            browse.userAccount = this.userAccount;
             browse.Show();
             this.Hide();
         }
@@ -54,6 +52,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void button1_Click(object sender, EventArgs e)
         {
             _M_ViewCart cart = new _M_ViewCart();
+            cart.userAccount = this.userAccount;
             cart.Show();
             this.Hide();
         }
@@ -62,6 +61,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void button3_Click(object sender, EventArgs e)
         {
             _M_AccountInfo account = new _M_AccountInfo();
+            account.userAccount = this.userAccount;
             account.Show();
             this.Hide();
         }

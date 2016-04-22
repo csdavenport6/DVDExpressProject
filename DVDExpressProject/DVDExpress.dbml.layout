@@ -20,7 +20,7 @@
         <elementListCompartment Id="65ee8120-33c8-4ee5-8576-d7f1bb44509e" absoluteBounds="4.39, 2.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.375 : 4.2588525390625); (2.95833333333333 : 4.2588525390625 : JumpStart); (2.79166666666667 : 4.2588525390625 : JumpEnd); (2.67708333333333 : 4.2588525390625 : JumpStart); (2.51041666666667 : 4.2588525390625 : JumpEnd); (2.5 : 4.2588525390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.375 : 4.3213525390625); (2.83333333333333 : 4.3213525390625 : JumpStart); (2.57291666666667 : 4.3213525390625 : JumpEnd); (2.5 : 4.3213525390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DVDExpressDataContext/Member/Member_Login" />
       <nodes>
         <classShapeMoniker Id="5109487d-5398-4b4e-b6fd-df8fdfec6411" />
@@ -39,7 +39,7 @@
         <elementListCompartment Id="430b169f-e6a3-4e53-b80d-01ec3843c764" absoluteBounds="7.3900000000000006, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(6.375 : 4.08735270182292); (6.85416666666667 : 4.08735270182292 : JumpStart); (7.02083333333333 : 4.08735270182292 : JumpEnd); (7.04166666666667 : 4.08735270182292 : JumpStart); (7.20833333333333 : 4.08735270182292 : JumpEnd); (7.375 : 4.08735270182292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(6.375 : 4.08735270182292); (7.375 : 4.08735270182292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DVDExpressDataContext/Member/Member_Review" />
       <nodes>
         <classShapeMoniker Id="5109487d-5398-4b4e-b6fd-df8fdfec6411" />
@@ -59,7 +59,7 @@
         <elementListCompartment Id="353bd3a1-fe84-4ecc-8098-27c0efe52d62" absoluteBounds="0.51499999999999968, 5.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(1.5 : 5.25); (1.5 : 5); (2.51041666666667 : 5 : JumpStart); (2.67708333333333 : 5 : JumpEnd); (2.875 : 5); (2.875 : 1.09699625651042); (4.25 : 1.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(1.5 : 5.25); (1.5 : 5); (2.57291666666667 : 5 : JumpStart); (2.73958333333333 : 5 : JumpEnd); (2.75 : 5); (2.75 : 3.15549967447917); (3.125 : 3.15549967447917); (3.125 : 1.09699625651042); (4.25 : 1.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DVDExpressDataContext/Reward/Reward_AccountReward" />
       <nodes>
         <classShapeMoniker Id="6f1ba186-ad91-47ed-a894-fcd88b69ad0c" />
@@ -72,14 +72,14 @@
         <elementListCompartment Id="5ac4d2b6-826e-472c-a4dc-9c76d053130c" absoluteBounds="3.1399999999999997, 5.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(7.468748 : 2.65549967447917); (7.468748 : 3.125); (7.125 : 3.125); (7.125 : 5.625); (7.02083333333333 : 5.625 : JumpStart); (6.85416666666667 : 5.625 : JumpEnd); (6.375 : 5.625); (6.375 : 6.20274983723958); (5.125 : 6.20274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(7.468748 : 2.65549967447917); (7.468748 : 3.125); (7.125 : 3.125); (7.125 : 5.625); (6.375 : 5.625); (6.375 : 6.20274983723958); (5.86458333333333 : 6.20274983723958 : JumpStart); (5.69791666666667 : 6.20274983723958 : JumpEnd); (5.125 : 6.20274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DVDExpressDataContext/Movie/Movie_Transaction" />
       <nodes>
         <classShapeMoniker Id="faa64549-5849-4aa0-a5a0-c13e3d5a3a3e" />
         <classShapeMoniker Id="00347d9e-bc17-4c8e-9fa5-f9ed7416845d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.5 : 5.94314697265625); (2.51041666666667 : 5.94314697265625 : JumpStart); (2.67708333333333 : 5.94314697265625 : JumpEnd); (3.125 : 5.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.5 : 5.94314697265625); (2.57291666666667 : 5.94314697265625 : JumpStart); (2.73958333333333 : 5.94314697265625 : JumpEnd); (3.125 : 5.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DVDExpressDataContext/Reward/Reward_Transaction" />
       <nodes>
         <classShapeMoniker Id="6f1ba186-ad91-47ed-a894-fcd88b69ad0c" />
@@ -106,30 +106,23 @@
         <classShapeMoniker Id="1fe641ee-9e11-424a-a6a6-6241babfa137" />
       </nodes>
     </associationConnector>
-    <classShape Id="aeff26e6-8ea3-43d7-ab5c-b2d5fc95ca23" absoluteBounds="0.625, 0.75, 2, 2.1554996744791666">
+    <classShape Id="4bb0c54f-b51d-4b13-bc98-a52e37cc5109" absoluteBounds="0.875, 0.75, 2, 2.1554996744791666">
       <DataClassMoniker Name="/DVDExpressDataContext/Account" />
       <nestedChildShapes>
-        <elementListCompartment Id="91e141fb-2ed4-4321-93c2-b868c09b22a9" absoluteBounds="0.64000000000000012, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4028f290-4208-495f-ab79-af785cdb8857" absoluteBounds="0.89000000000000012, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.625 : 1.45799438476563); (2.79166666666667 : 1.45799438476562 : JumpStart); (2.95833333333333 : 1.45799438476563 : JumpEnd); (4.25 : 1.45799438476563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.875 : 1.45799438476563); (3.04166666666667 : 1.45799438476562 : JumpStart); (3.20833333333333 : 1.45799438476563 : JumpEnd); (4.25 : 1.45799438476563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DVDExpressDataContext/Account/Account_AccountReward" />
       <nodes>
-        <classShapeMoniker Id="aeff26e6-8ea3-43d7-ab5c-b2d5fc95ca23" />
+        <classShapeMoniker Id="4bb0c54f-b51d-4b13-bc98-a52e37cc5109" />
         <classShapeMoniker Id="25afcf7b-edd8-4b10-89f3-92570c9029b6" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.625 : 2.39024983723958); (2.79166666666667 : 2.39024983723958 : JumpStart); (2.95833333333333 : 2.39024983723958 : JumpEnd); (4.375 : 2.39024983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/DVDExpressDataContext/Account/Account_Member" />
-      <nodes>
-        <classShapeMoniker Id="aeff26e6-8ea3-43d7-ab5c-b2d5fc95ca23" />
-        <classShapeMoniker Id="5109487d-5398-4b4e-b6fd-df8fdfec6411" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.59375 : 2.90549967447917); (2.59375 : 6.98964680989583); (3.125 : 6.98964680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.65625 : 2.90549967447917); (2.65625 : 6.98964680989583); (3.125 : 6.98964680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DVDExpressDataContext/Account/Account_Transaction" />
       <nodes>
-        <classShapeMoniker Id="aeff26e6-8ea3-43d7-ab5c-b2d5fc95ca23" />
+        <classShapeMoniker Id="4bb0c54f-b51d-4b13-bc98-a52e37cc5109" />
         <classShapeMoniker Id="00347d9e-bc17-4c8e-9fa5-f9ed7416845d" />
       </nodes>
     </associationConnector>

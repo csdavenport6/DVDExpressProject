@@ -78,7 +78,7 @@
             this.BrowseButton.TabIndex = 9;
             this.BrowseButton.Text = "Browse Movies";
             this.BrowseButton.UseVisualStyleBackColor = true;
-            this.BrowseButton.Click += new System.EventHandler(this.BrowseButton_Click);
+
             // 
             // CartButton
             // 

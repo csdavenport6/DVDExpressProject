@@ -205,7 +205,7 @@
             this.SearchButton.TabIndex = 21;
             this.SearchButton.Text = "Search Movies";
             this.SearchButton.UseVisualStyleBackColor = true;
-            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+
             // 
             // BrowseNavButton
             // 

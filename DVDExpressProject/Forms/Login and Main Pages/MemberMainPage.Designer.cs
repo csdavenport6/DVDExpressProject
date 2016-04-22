@@ -40,7 +40,6 @@
             this.BrowseButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SearchButton = new System.Windows.Forms.Button();
-            this.testbutton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -169,22 +168,11 @@
             this.SearchButton.UseVisualStyleBackColor = true;
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
-            // testbutton
-            // 
-            this.testbutton.Location = new System.Drawing.Point(805, 177);
-            this.testbutton.Name = "testbutton";
-            this.testbutton.Size = new System.Drawing.Size(128, 33);
-            this.testbutton.TabIndex = 5;
-            this.testbutton.Text = "button1";
-            this.testbutton.UseVisualStyleBackColor = true;
-            this.testbutton.Click += new System.EventHandler(this.testbutton_Click);
-            // 
             // MemberMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 718);
-            this.Controls.Add(this.testbutton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -215,6 +203,5 @@
         private System.Windows.Forms.Button BrowseButton;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button testbutton;
     }
 }

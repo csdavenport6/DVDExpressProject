@@ -31,15 +31,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.OldPassword = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ConfirmPassword = new System.Windows.Forms.TextBox();
+            this.OldPasswordEntry = new System.Windows.Forms.TextBox();
+            this.NewPasswordEntry = new System.Windows.Forms.TextBox();
+            this.ConfirmPasswordEntry = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.ReturnButton = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,32 +68,32 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(201, 309);
+            this.label3.Location = new System.Drawing.Point(201, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(214, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirm password:";
             // 
-            // OldPassword
+            // OldPasswordEntry
             // 
-            this.OldPassword.Location = new System.Drawing.Point(186, 160);
-            this.OldPassword.Name = "OldPassword";
-            this.OldPassword.Size = new System.Drawing.Size(230, 26);
-            this.OldPassword.TabIndex = 3;
+            this.OldPasswordEntry.Location = new System.Drawing.Point(186, 160);
+            this.OldPasswordEntry.Name = "OldPasswordEntry";
+            this.OldPasswordEntry.Size = new System.Drawing.Size(230, 26);
+            this.OldPasswordEntry.TabIndex = 3;
             // 
-            // textBox2
+            // NewPasswordEntry
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 254);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 26);
-            this.textBox2.TabIndex = 4;
+            this.NewPasswordEntry.Location = new System.Drawing.Point(186, 254);
+            this.NewPasswordEntry.Name = "NewPasswordEntry";
+            this.NewPasswordEntry.Size = new System.Drawing.Size(230, 26);
+            this.NewPasswordEntry.TabIndex = 4;
             // 
-            // ConfirmPassword
+            // ConfirmPasswordEntry
             // 
-            this.ConfirmPassword.Location = new System.Drawing.Point(190, 342);
-            this.ConfirmPassword.Name = "ConfirmPassword";
-            this.ConfirmPassword.Size = new System.Drawing.Size(230, 26);
-            this.ConfirmPassword.TabIndex = 5;
+            this.ConfirmPasswordEntry.Location = new System.Drawing.Point(190, 342);
+            this.ConfirmPasswordEntry.Name = "ConfirmPasswordEntry";
+            this.ConfirmPasswordEntry.Size = new System.Drawing.Size(230, 26);
+            this.ConfirmPasswordEntry.TabIndex = 5;
             // 
             // menuStrip1
             // 
@@ -132,35 +133,45 @@
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(304, 429);
+            this.SaveButton.Location = new System.Drawing.Point(244, 430);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(144, 51);
+            this.SaveButton.Size = new System.Drawing.Size(144, 50);
             this.SaveButton.TabIndex = 7;
             this.SaveButton.Text = "Save New Password";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // ReturnButton
+            // CancelButton
             // 
-            this.ReturnButton.Location = new System.Drawing.Point(122, 429);
-            this.ReturnButton.Name = "ReturnButton";
-            this.ReturnButton.Size = new System.Drawing.Size(144, 51);
-            this.ReturnButton.TabIndex = 9;
-            this.ReturnButton.Text = "Return";
-            this.ReturnButton.UseVisualStyleBackColor = true;
-            this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click);
+            this.CancelButton.Location = new System.Drawing.Point(72, 430);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(144, 50);
+            this.CancelButton.TabIndex = 8;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(418, 430);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 50);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Return";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 555);
-            this.Controls.Add(this.ReturnButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.ConfirmPassword);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.OldPassword);
+            this.Controls.Add(this.ConfirmPasswordEntry);
+            this.Controls.Add(this.NewPasswordEntry);
+            this.Controls.Add(this.OldPasswordEntry);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -178,14 +189,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox OldPassword;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox ConfirmPassword;
+        private System.Windows.Forms.TextBox OldPasswordEntry;
+        private System.Windows.Forms.TextBox NewPasswordEntry;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem AboutButton;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FAQButton;
         private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Button ReturnButton;
+        private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ConfirmPasswordEntry;
     }
 }

@@ -54,7 +54,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.EmailEntry = new System.Windows.Forms.TextBox();
             this.FirstNameEntry = new System.Windows.Forms.TextBox();
-            this.ExpDateEntry = new System.Windows.Forms.TextBox();
             this.CreditCardEntry = new System.Windows.Forms.TextBox();
             this.ConfirmProfileButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
@@ -67,6 +66,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.PhoneEntry = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.ExpirDateEntry = new System.Windows.Forms.MaskedTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -303,13 +303,6 @@
             this.FirstNameEntry.Size = new System.Drawing.Size(169, 26);
             this.FirstNameEntry.TabIndex = 28;
             // 
-            // ExpDateEntry
-            // 
-            this.ExpDateEntry.Location = new System.Drawing.Point(542, 177);
-            this.ExpDateEntry.Name = "ExpDateEntry";
-            this.ExpDateEntry.Size = new System.Drawing.Size(169, 26);
-            this.ExpDateEntry.TabIndex = 29;
-            // 
             // CreditCardEntry
             // 
             this.CreditCardEntry.Location = new System.Drawing.Point(542, 123);
@@ -416,11 +409,20 @@
             this.label18.TabIndex = 37;
             this.label18.Text = "Phone";
             // 
+            // ExpirDateEntry
+            // 
+            this.ExpirDateEntry.Location = new System.Drawing.Point(542, 177);
+            this.ExpirDateEntry.Mask = "00/00";
+            this.ExpirDateEntry.Name = "ExpirDateEntry";
+            this.ExpirDateEntry.Size = new System.Drawing.Size(47, 26);
+            this.ExpirDateEntry.TabIndex = 39;
+            // 
             // CreateAcct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 546);
+            this.Controls.Add(this.ExpirDateEntry);
             this.Controls.Add(this.PhoneEntry);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.ZIPEntry);
@@ -429,7 +431,6 @@
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.ConfirmProfileButton);
             this.Controls.Add(this.CreditCardEntry);
-            this.Controls.Add(this.ExpDateEntry);
             this.Controls.Add(this.FirstNameEntry);
             this.Controls.Add(this.EmailEntry);
             this.Controls.Add(this.label16);
@@ -496,7 +497,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox EmailEntry;
         private System.Windows.Forms.TextBox FirstNameEntry;
-        private System.Windows.Forms.TextBox ExpDateEntry;
         private System.Windows.Forms.TextBox CreditCardEntry;
         private System.Windows.Forms.Button ConfirmProfileButton;
         private System.Windows.Forms.Button CancelButton;
@@ -509,5 +509,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox PhoneEntry;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.MaskedTextBox ExpirDateEntry;
     }
 }
