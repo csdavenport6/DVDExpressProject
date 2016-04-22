@@ -40,8 +40,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.CancelButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ReturnButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +86,7 @@
             // OldPasswordEntry
             // 
             this.OldPasswordEntry.Location = new System.Drawing.Point(248, 200);
-            this.OldPasswordEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OldPasswordEntry.Margin = new System.Windows.Forms.Padding(4);
             this.OldPasswordEntry.Name = "OldPasswordEntry";
             this.OldPasswordEntry.Size = new System.Drawing.Size(305, 31);
             this.OldPasswordEntry.TabIndex = 3;
@@ -95,7 +94,7 @@
             // NewPasswordEntry
             // 
             this.NewPasswordEntry.Location = new System.Drawing.Point(248, 318);
-            this.NewPasswordEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NewPasswordEntry.Margin = new System.Windows.Forms.Padding(4);
             this.NewPasswordEntry.Name = "NewPasswordEntry";
             this.NewPasswordEntry.Size = new System.Drawing.Size(305, 31);
             this.NewPasswordEntry.TabIndex = 4;
@@ -103,7 +102,7 @@
             // ConfirmPasswordEntry
             // 
             this.ConfirmPasswordEntry.Location = new System.Drawing.Point(253, 428);
-            this.ConfirmPasswordEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConfirmPasswordEntry.Margin = new System.Windows.Forms.Padding(4);
             this.ConfirmPasswordEntry.Name = "ConfirmPasswordEntry";
             this.ConfirmPasswordEntry.Size = new System.Drawing.Size(305, 31);
             this.ConfirmPasswordEntry.TabIndex = 5;
@@ -139,15 +138,15 @@
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Size = new System.Drawing.Size(159, 38);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(325, 538);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SaveButton.Location = new System.Drawing.Point(440, 538);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(192, 62);
             this.SaveButton.TabIndex = 7;
@@ -155,26 +154,16 @@
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // CancelButton
+            // ReturnButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(96, 538);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(192, 62);
-            this.CancelButton.TabIndex = 8;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(557, 538);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 62);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Return";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ReturnButton.Location = new System.Drawing.Point(170, 538);
+            this.ReturnButton.Margin = new System.Windows.Forms.Padding(4);
+            this.ReturnButton.Name = "ReturnButton";
+            this.ReturnButton.Size = new System.Drawing.Size(192, 62);
+            this.ReturnButton.TabIndex = 9;
+            this.ReturnButton.Text = "Return";
+            this.ReturnButton.UseVisualStyleBackColor = true;
+            this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
             // ChangePassword
             // 
@@ -183,8 +172,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(820, 694);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.ReturnButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.ConfirmPasswordEntry);
@@ -193,7 +181,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChangePassword";
             this.Text = "ChangePassword";
             this.menuStrip1.ResumeLayout(false);
@@ -215,8 +203,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FAQButton;
         private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Button CancelButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ReturnButton;
         private System.Windows.Forms.TextBox ConfirmPasswordEntry;
     }
 }
