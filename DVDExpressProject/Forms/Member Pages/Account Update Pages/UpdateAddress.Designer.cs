@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateAddress));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,40 +52,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(231, 202);
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(356, 252);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 29);
+            this.label1.Size = new System.Drawing.Size(169, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Address 1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(294, 306);
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(445, 382);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 29);
+            this.label2.Size = new System.Drawing.Size(75, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "City";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(279, 368);
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(425, 458);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 29);
+            this.label3.Size = new System.Drawing.Size(96, 37);
             this.label3.TabIndex = 2;
             this.label3.Text = "State";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(237, 428);
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(369, 535);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 29);
+            this.label4.Size = new System.Drawing.Size(155, 37);
             this.label4.TabIndex = 3;
             this.label4.Text = "Zip Code";
             // 
@@ -96,15 +109,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(897, 35);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(1196, 44);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(74, 29);
+            this.AboutButton.Size = new System.Drawing.Size(92, 36);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -113,45 +126,51 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(131, 30);
+            this.FAQButton.Size = new System.Drawing.Size(135, 36);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Verdana", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(294, 92);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(368, 122);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(346, 34);
+            this.label5.Size = new System.Drawing.Size(452, 45);
             this.label5.TabIndex = 9;
             this.label5.Text = "Update your address";
             // 
             // Address1Text
             // 
-            this.Address1Text.Location = new System.Drawing.Point(423, 202);
+            this.Address1Text.Location = new System.Drawing.Point(564, 252);
+            this.Address1Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Address1Text.Name = "Address1Text";
-            this.Address1Text.Size = new System.Drawing.Size(282, 26);
+            this.Address1Text.Size = new System.Drawing.Size(375, 31);
             this.Address1Text.TabIndex = 10;
             // 
             // CityText
             // 
-            this.CityText.Location = new System.Drawing.Point(423, 306);
+            this.CityText.Location = new System.Drawing.Point(564, 382);
+            this.CityText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CityText.Name = "CityText";
-            this.CityText.Size = new System.Drawing.Size(282, 26);
+            this.CityText.Size = new System.Drawing.Size(375, 31);
             this.CityText.TabIndex = 13;
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(292, 495);
+            this.CancelButton.Location = new System.Drawing.Point(389, 619);
+            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(171, 72);
+            this.CancelButton.Size = new System.Drawing.Size(228, 90);
             this.CancelButton.TabIndex = 14;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
@@ -159,9 +178,10 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(510, 495);
+            this.SaveButton.Location = new System.Drawing.Point(680, 619);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(171, 72);
+            this.SaveButton.Size = new System.Drawing.Size(228, 90);
             this.SaveButton.TabIndex = 15;
             this.SaveButton.Text = "Save New Address";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -170,43 +190,51 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(231, 249);
+            this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(354, 312);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 29);
+            this.label6.Size = new System.Drawing.Size(171, 37);
             this.label6.TabIndex = 16;
             this.label6.Text = "Address 2";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Address2Text
             // 
-            this.Address2Text.Location = new System.Drawing.Point(423, 254);
+            this.Address2Text.Location = new System.Drawing.Point(564, 318);
+            this.Address2Text.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Address2Text.Name = "Address2Text";
-            this.Address2Text.Size = new System.Drawing.Size(282, 26);
+            this.Address2Text.Size = new System.Drawing.Size(375, 31);
             this.Address2Text.TabIndex = 17;
             // 
             // StateEntry
             // 
-            this.StateEntry.Location = new System.Drawing.Point(423, 371);
+            this.StateEntry.Location = new System.Drawing.Point(564, 464);
+            this.StateEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StateEntry.Mask = "AA";
             this.StateEntry.Name = "StateEntry";
-            this.StateEntry.Size = new System.Drawing.Size(31, 26);
+            this.StateEntry.Size = new System.Drawing.Size(40, 31);
             this.StateEntry.TabIndex = 18;
             // 
             // ZIPEntry
             // 
-            this.ZIPEntry.Location = new System.Drawing.Point(423, 428);
+            this.ZIPEntry.Location = new System.Drawing.Point(564, 535);
+            this.ZIPEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ZIPEntry.Mask = "00000";
             this.ZIPEntry.Name = "ZIPEntry";
-            this.ZIPEntry.Size = new System.Drawing.Size(57, 26);
+            this.ZIPEntry.Size = new System.Drawing.Size(75, 31);
             this.ZIPEntry.TabIndex = 19;
             this.ZIPEntry.ValidatingType = typeof(int);
             // 
             // UpdateAddress
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 729);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1196, 911);
             this.Controls.Add(this.ZIPEntry);
             this.Controls.Add(this.StateEntry);
             this.Controls.Add(this.Address2Text);
@@ -221,6 +249,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UpdateAddress";
             this.Text = "UpdateAddress";
             this.menuStrip1.ResumeLayout(false);

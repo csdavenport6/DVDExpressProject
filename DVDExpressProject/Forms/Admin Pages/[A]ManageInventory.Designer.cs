@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_A_ManageInventory));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.ViewButton = new System.Windows.Forms.Button();
             this.EditButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
@@ -65,21 +67,33 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(131, 30);
+            this.FAQButton.Size = new System.Drawing.Size(135, 36);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
+            // ViewButton
+            // 
+            this.ViewButton.Location = new System.Drawing.Point(360, 121);
+            this.ViewButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ViewButton.Name = "ViewButton";
+            this.ViewButton.Size = new System.Drawing.Size(300, 73);
+            this.ViewButton.TabIndex = 2;
+            this.ViewButton.Text = "View Current Inventory";
+            this.ViewButton.UseVisualStyleBackColor = true;
+            this.ViewButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // EditButton
             // 
-            this.EditButton.Location = new System.Drawing.Point(272, 197);
+            this.EditButton.Location = new System.Drawing.Point(180, 112);
+            this.EditButton.Margin = new System.Windows.Forms.Padding(2);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(225, 58);
+            this.EditButton.Size = new System.Drawing.Size(150, 38);
             this.EditButton.TabIndex = 3;
             this.EditButton.Text = "Update Movie";
             this.EditButton.UseVisualStyleBackColor = true;
@@ -87,9 +101,10 @@
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(272, 118);
+            this.AddButton.Location = new System.Drawing.Point(180, 160);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(225, 58);
+            this.AddButton.Size = new System.Drawing.Size(150, 38);
             this.AddButton.TabIndex = 4;
             this.AddButton.Text = "Add Movie";
             this.AddButton.UseVisualStyleBackColor = true;
@@ -97,9 +112,10 @@
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(272, 276);
+            this.DeleteButton.Location = new System.Drawing.Point(180, 209);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(225, 58);
+            this.DeleteButton.Size = new System.Drawing.Size(150, 38);
             this.DeleteButton.TabIndex = 5;
             this.DeleteButton.Text = "Delete Movie";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -107,18 +123,20 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(405, 406);
+            this.SaveButton.Location = new System.Drawing.Point(270, 264);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(225, 58);
+            this.SaveButton.Size = new System.Drawing.Size(150, 38);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save Updates";
             this.SaveButton.UseVisualStyleBackColor = true;
             // 
             // ReturnButton
             // 
-            this.ReturnButton.Location = new System.Drawing.Point(141, 406);
+            this.ReturnButton.Location = new System.Drawing.Point(94, 264);
+            this.ReturnButton.Margin = new System.Windows.Forms.Padding(2);
             this.ReturnButton.Name = "ReturnButton";
-            this.ReturnButton.Size = new System.Drawing.Size(225, 58);
+            this.ReturnButton.Size = new System.Drawing.Size(150, 38);
             this.ReturnButton.TabIndex = 7;
             this.ReturnButton.Text = "Return";
             this.ReturnButton.UseVisualStyleBackColor = true;
@@ -126,10 +144,12 @@
             // 
             // _A_ManageInventory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(786, 515);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1048, 684);
             this.Controls.Add(this.ReturnButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.DeleteButton);
@@ -137,6 +157,7 @@
             this.Controls.Add(this.EditButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "_A_ManageInventory";
             this.Text = "_A_ManageInventory";
             this.Load += new System.EventHandler(this._A_ManageInventory_Load);
