@@ -72,7 +72,7 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
             MessageBox.Show("Password Updated!");
         }
 
-        private void ReturnButton_Click(object sender, EventArgs e)
+        private void ReturnButton_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

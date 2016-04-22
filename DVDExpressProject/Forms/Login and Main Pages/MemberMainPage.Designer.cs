@@ -197,9 +197,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(375, 408);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(464, 25);
+            this.label5.Size = new System.Drawing.Size(786, 25);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Member Features: More rewards, more movies!";
+            this.label5.Text = "Member Features: More rewards, more movies, view movie trailers prior to rental!";
             // 
             // MemberMainPage
             // 
