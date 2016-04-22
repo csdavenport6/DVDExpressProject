@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_M_Search));
             this.BrowseButton = new System.Windows.Forms.Button();
             this.ViewCartButton = new System.Windows.Forms.Button();
             this.ViewWishlistButton = new System.Windows.Forms.Button();
@@ -54,7 +55,7 @@
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
-            //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MovieList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,10 +64,10 @@
             // 
             // BrowseButton
             // 
-            this.BrowseButton.Location = new System.Drawing.Point(14, 152);
-            this.BrowseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BrowseButton.Location = new System.Drawing.Point(19, 190);
+            this.BrowseButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.BrowseButton.Name = "BrowseButton";
-            this.BrowseButton.Size = new System.Drawing.Size(230, 114);
+            this.BrowseButton.Size = new System.Drawing.Size(307, 142);
             this.BrowseButton.TabIndex = 17;
             this.BrowseButton.Text = "Browse Movies";
             this.BrowseButton.UseVisualStyleBackColor = true;
@@ -74,10 +75,10 @@
             // 
             // ViewCartButton
             // 
-            this.ViewCartButton.Location = new System.Drawing.Point(14, 271);
-            this.ViewCartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewCartButton.Location = new System.Drawing.Point(19, 339);
+            this.ViewCartButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.ViewCartButton.Name = "ViewCartButton";
-            this.ViewCartButton.Size = new System.Drawing.Size(228, 100);
+            this.ViewCartButton.Size = new System.Drawing.Size(304, 125);
             this.ViewCartButton.TabIndex = 13;
             this.ViewCartButton.Text = "Cart";
             this.ViewCartButton.UseVisualStyleBackColor = true;
@@ -85,10 +86,10 @@
             // 
             // ViewWishlistButton
             // 
-            this.ViewWishlistButton.Location = new System.Drawing.Point(14, 376);
-            this.ViewWishlistButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewWishlistButton.Location = new System.Drawing.Point(19, 470);
+            this.ViewWishlistButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.ViewWishlistButton.Name = "ViewWishlistButton";
-            this.ViewWishlistButton.Size = new System.Drawing.Size(228, 100);
+            this.ViewWishlistButton.Size = new System.Drawing.Size(304, 125);
             this.ViewWishlistButton.TabIndex = 14;
             this.ViewWishlistButton.Text = "Wishlist";
             this.ViewWishlistButton.UseVisualStyleBackColor = true;
@@ -96,10 +97,10 @@
             // 
             // ViewAcctButton
             // 
-            this.ViewAcctButton.Location = new System.Drawing.Point(14, 481);
-            this.ViewAcctButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewAcctButton.Location = new System.Drawing.Point(19, 601);
+            this.ViewAcctButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.ViewAcctButton.Name = "ViewAcctButton";
-            this.ViewAcctButton.Size = new System.Drawing.Size(228, 100);
+            this.ViewAcctButton.Size = new System.Drawing.Size(304, 125);
             this.ViewAcctButton.TabIndex = 15;
             this.ViewAcctButton.Text = "Account";
             this.ViewAcctButton.UseVisualStyleBackColor = true;
@@ -108,18 +109,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(288, 199);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(374, 206);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 20);
+            this.label1.Size = new System.Drawing.Size(272, 37);
             this.label1.TabIndex = 18;
             this.label1.Text = "Search Inventory";
             // 
             // SearchBox
             // 
-            this.SearchBox.Location = new System.Drawing.Point(424, 199);
-            this.SearchBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SearchBox.Location = new System.Drawing.Point(654, 212);
+            this.SearchBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SearchBox.Name = "SearchBox";
-            this.SearchBox.Size = new System.Drawing.Size(301, 26);
+            this.SearchBox.Size = new System.Drawing.Size(542, 31);
             this.SearchBox.TabIndex = 19;
             this.SearchBox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
             // 
@@ -135,10 +140,11 @@
             this.ratingDataGridViewTextBoxColumn,
             this.daysForRentDataGridViewTextBoxColumn});
             this.MovieList.DataSource = this.movieBindingSource;
-            this.MovieList.Location = new System.Drawing.Point(292, 271);
+            this.MovieList.Location = new System.Drawing.Point(389, 271);
+            this.MovieList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MovieList.Name = "MovieList";
             this.MovieList.RowTemplate.Height = 28;
-            this.MovieList.Size = new System.Drawing.Size(605, 357);
+            this.MovieList.Size = new System.Drawing.Size(807, 446);
             this.MovieList.TabIndex = 20;
             // 
             // titleDataGridViewTextBoxColumn
@@ -184,10 +190,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(277, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(360, 60);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(658, 154);
+            this.pictureBox2.Size = new System.Drawing.Size(877, 131);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
@@ -198,14 +204,13 @@
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(16, 48);
-            this.SearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SearchButton.Location = new System.Drawing.Point(21, 60);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(228, 100);
+            this.SearchButton.Size = new System.Drawing.Size(304, 125);
             this.SearchButton.TabIndex = 21;
             this.SearchButton.Text = "Search Movies";
             this.SearchButton.UseVisualStyleBackColor = true;
-
             // 
             // BrowseNavButton
             // 
@@ -255,15 +260,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(948, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1264, 40);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(52, 22);
+            this.AboutButton.Size = new System.Drawing.Size(92, 36);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -272,21 +277,23 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(152, 22);
+            this.FAQButton.Size = new System.Drawing.Size(135, 36);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // _M_Search
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 692);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1264, 865);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.MovieList);
             this.Controls.Add(this.SearchBox);
@@ -298,7 +305,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "_M_Search";
             this.Text = "_M_Search";
             this.Load += new System.EventHandler(this._M_Search_Load);
