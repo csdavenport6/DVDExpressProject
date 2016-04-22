@@ -69,5 +69,15 @@ namespace DVDExpressProject.Forms
             MessageBox.Show("This form is the main page members see when they login. From here they can go to any of the other various forms.");
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

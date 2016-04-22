@@ -177,29 +177,34 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(375, 366);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(375, 364);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 25);
+            this.label2.Size = new System.Drawing.Size(197, 31);
             this.label2.TabIndex = 6;
             this.label2.Text = "Coming soon...";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(375, 450);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(375, 454);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 25);
+            this.label4.Size = new System.Drawing.Size(781, 31);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Admin Features: ";
+            this.label4.Text = "Admin Features: change member status, lock member accounts";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(375, 408);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(375, 406);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(786, 25);
+            this.label5.Size = new System.Drawing.Size(822, 31);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Member Features: More rewards, more movies, view movie trailers prior to rental!";
+            this.label5.Text = "Member Features: More rewards, more movies, view movie trailers!";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // MemberMainPage
             // 
