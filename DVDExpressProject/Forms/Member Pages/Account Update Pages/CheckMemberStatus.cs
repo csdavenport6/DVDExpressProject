@@ -12,6 +12,7 @@ namespace DVDExpressProject.Forms.Member_Pages.Account_Update_Pages
 {
     public partial class CheckMemberStatus : Form
     {
+        public Member userAccount { get; set; }
         public CheckMemberStatus()
         {
             InitializeComponent();

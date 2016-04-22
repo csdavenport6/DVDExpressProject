@@ -413,8 +413,6 @@ namespace DVDExpressProject
 		
 		private EntitySet<Wishlist> _Wishlists;
 		
-		private EntityRef<Account> _Account;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -448,7 +446,6 @@ namespace DVDExpressProject
 			this._Logins = new EntitySet<Login>(new Action<Login>(this.attach_Logins), new Action<Login>(this.detach_Logins));
 			this._Reviews = new EntitySet<Review>(new Action<Review>(this.attach_Reviews), new Action<Review>(this.detach_Reviews));
 			this._Wishlists = new EntitySet<Wishlist>(new Action<Wishlist>(this.attach_Wishlists), new Action<Wishlist>(this.detach_Wishlists));
-			this._Account = default(EntityRef<Account>);
 			OnCreated();
 		}
 		
@@ -483,10 +480,6 @@ namespace DVDExpressProject
 			{
 				if ((this._AccountID != value))
 				{
-					if (this._Account.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnAccountIDChanging(value);
 					this.SendPropertyChanging();
 					this._AccountID = value;
@@ -712,40 +705,6 @@ namespace DVDExpressProject
 			set
 			{
 				this._Wishlists.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Member", Storage="_Account", ThisKey="AccountID", OtherKey="AccountID", IsForeignKey=true)]
-		public Account Account
-		{
-			get
-			{
-				return this._Account.Entity;
-			}
-			set
-			{
-				Account previousValue = this._Account.Entity;
-				if (((previousValue != value) 
-							|| (this._Account.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Account.Entity = null;
-						previousValue.Members.Remove(this);
-					}
-					this._Account.Entity = value;
-					if ((value != null))
-					{
-						value.Members.Add(this);
-						this._AccountID = value.AccountID;
-					}
-					else
-					{
-						this._AccountID = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("Account");
-				}
 			}
 		}
 		
@@ -2035,11 +1994,9 @@ namespace DVDExpressProject
 		
 		private System.Nullable<bool> _PaymentType;
 		
-		private System.Nullable<System.DateTime> _ExpirationDate;
+		private string _ExpirationDate;
 		
 		private System.Nullable<int> _CVV;
-		
-		private EntitySet<Member> _Members;
 		
 		private EntitySet<Transaction> _Transactions;
 		
@@ -2057,7 +2014,7 @@ namespace DVDExpressProject
     partial void OnCardNumberChanged();
     partial void OnPaymentTypeChanging(System.Nullable<bool> value);
     partial void OnPaymentTypeChanged();
-    partial void OnExpirationDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnExpirationDateChanging(string value);
     partial void OnExpirationDateChanged();
     partial void OnCVVChanging(System.Nullable<int> value);
     partial void OnCVVChanged();
@@ -2065,7 +2022,6 @@ namespace DVDExpressProject
 		
 		public Account()
 		{
-			this._Members = new EntitySet<Member>(new Action<Member>(this.attach_Members), new Action<Member>(this.detach_Members));
 			this._Transactions = new EntitySet<Transaction>(new Action<Transaction>(this.attach_Transactions), new Action<Transaction>(this.detach_Transactions));
 			OnCreated();
 		}
@@ -2170,8 +2126,8 @@ namespace DVDExpressProject
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ExpirationDate", DbType="Date")]
-		public System.Nullable<System.DateTime> ExpirationDate
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ExpirationDate", DbType="VarChar(25)")]
+		public string ExpirationDate
 		{
 			get
 			{
@@ -2210,19 +2166,6 @@ namespace DVDExpressProject
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Member", Storage="_Members", ThisKey="AccountID", OtherKey="AccountID")]
-		public EntitySet<Member> Members
-		{
-			get
-			{
-				return this._Members;
-			}
-			set
-			{
-				this._Members.Assign(value);
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_Transaction", Storage="_Transactions", ThisKey="AccountID", OtherKey="AccountID")]
 		public EntitySet<Transaction> Transactions
 		{
@@ -2254,18 +2197,6 @@ namespace DVDExpressProject
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_Members(Member entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = this;
-		}
-		
-		private void detach_Members(Member entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = null;
 		}
 		
 		private void attach_Transactions(Transaction entity)

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DOBEntry = new System.Windows.Forms.DateTimePicker();
+            this.LastNameEntry = new System.Windows.Forms.TextBox();
+            this.FirstNameEntry = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.UsernameEntry = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SaveChanges = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -47,87 +47,83 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // DOBEntry
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(102, 187);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
-            this.dateTimePicker1.TabIndex = 46;
+            this.DOBEntry.Location = new System.Drawing.Point(153, 288);
+            this.DOBEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.DOBEntry.Name = "DOBEntry";
+            this.DOBEntry.Size = new System.Drawing.Size(301, 26);
+            this.DOBEntry.TabIndex = 46;
             // 
-            // textBox2
+            // LastNameEntry
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 158);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 20);
-            this.textBox2.TabIndex = 45;
+            this.LastNameEntry.Location = new System.Drawing.Point(153, 243);
+            this.LastNameEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.LastNameEntry.Name = "LastNameEntry";
+            this.LastNameEntry.Size = new System.Drawing.Size(301, 26);
+            this.LastNameEntry.TabIndex = 45;
             // 
-            // textBox1
+            // FirstNameEntry
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 129);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 20);
-            this.textBox1.TabIndex = 44;
+            this.FirstNameEntry.Location = new System.Drawing.Point(153, 198);
+            this.FirstNameEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.FirstNameEntry.Name = "FirstNameEntry";
+            this.FirstNameEntry.Size = new System.Drawing.Size(301, 26);
+            this.FirstNameEntry.TabIndex = 44;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 187);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(42, 288);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.Size = new System.Drawing.Size(56, 20);
             this.label7.TabIndex = 43;
             this.label7.Text = "D.O.B.";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 158);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(42, 243);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
+            this.label6.Size = new System.Drawing.Size(86, 20);
             this.label6.TabIndex = 42;
             this.label6.Text = "Last Name";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 131);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(42, 202);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 41;
             this.label5.Text = "First Name";
             // 
-            // textBox4
+            // UsernameEntry
             // 
-            this.textBox4.Location = new System.Drawing.Point(102, 223);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 20);
-            this.textBox4.TabIndex = 49;
+            this.UsernameEntry.Location = new System.Drawing.Point(153, 343);
+            this.UsernameEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.UsernameEntry.Name = "UsernameEntry";
+            this.UsernameEntry.Size = new System.Drawing.Size(301, 26);
+            this.UsernameEntry.TabIndex = 49;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 223);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(42, 343);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 47;
             this.label1.Text = "Username";
             // 
             // SaveChanges
             // 
-            this.SaveChanges.Location = new System.Drawing.Point(286, 295);
-            this.SaveChanges.Margin = new System.Windows.Forms.Padding(2);
+            this.SaveChanges.Location = new System.Drawing.Point(429, 454);
             this.SaveChanges.Name = "SaveChanges";
-            this.SaveChanges.Size = new System.Drawing.Size(136, 61);
+            this.SaveChanges.Size = new System.Drawing.Size(204, 94);
             this.SaveChanges.TabIndex = 50;
             this.SaveChanges.Text = "Save Changes";
             this.SaveChanges.UseVisualStyleBackColor = true;
+            this.SaveChanges.Click += new System.EventHandler(this.SaveChanges_Click);
             // 
             // menuStrip1
             // 
@@ -137,15 +133,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(574, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(861, 33);
             this.menuStrip1.TabIndex = 51;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(52, 22);
+            this.AboutButton.Size = new System.Drawing.Size(74, 29);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -154,33 +150,32 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(152, 22);
+            this.FAQButton.Size = new System.Drawing.Size(131, 30);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(34, 23);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(51, 35);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(438, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(657, 154);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(102, 295);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CancelButton.Location = new System.Drawing.Point(153, 454);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(136, 58);
+            this.CancelButton.Size = new System.Drawing.Size(204, 89);
             this.CancelButton.TabIndex = 52;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
@@ -188,23 +183,23 @@
             // 
             // EditAccountInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 472);
+            this.ClientSize = new System.Drawing.Size(861, 726);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SaveChanges);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.UsernameEntry);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DOBEntry);
+            this.Controls.Add(this.LastNameEntry);
+            this.Controls.Add(this.FirstNameEntry);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "EditAccountInfo";
             this.Text = "EditAccountInfo";
             this.menuStrip1.ResumeLayout(false);
@@ -218,13 +213,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker DOBEntry;
+        private System.Windows.Forms.TextBox LastNameEntry;
+        private System.Windows.Forms.TextBox FirstNameEntry;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox UsernameEntry;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button SaveChanges;
         private System.Windows.Forms.MenuStrip menuStrip1;

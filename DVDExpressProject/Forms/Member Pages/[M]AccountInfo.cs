@@ -14,6 +14,7 @@ namespace DVDExpressProject.Forms.Member_Pages
 {
     public partial class _M_AccountInfo : Form
     {
+        public Member userAccount { get; set; }
         public _M_AccountInfo()
         {
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void button4_Click(object sender, EventArgs e)
         {
             _M_Search search = new _M_Search();
+            search.userAccount = this.userAccount;
             search.Show();
             this.Hide();
             
@@ -32,6 +34,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void button5_Click(object sender, EventArgs e)
         {
             _M_BrowseMovies browse = new _M_BrowseMovies();
+            browse.userAccount = this.userAccount;
             browse.Show();
             this.Hide();
             
@@ -41,6 +44,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void button1_Click(object sender, EventArgs e)
         {
             _M_ViewCart cart = new _M_ViewCart();
+            cart.userAccount = this.userAccount;
             cart.Show();
             this.Hide();
             
@@ -50,6 +54,7 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void button2_Click(object sender, EventArgs e)
         {
             _M_ViewWishlists wishlist = new _M_ViewWishlists();
+            wishlist.userAccount = this.userAccount;
             wishlist.Show();
             this.Hide();
             
@@ -60,26 +65,31 @@ namespace DVDExpressProject.Forms.Member_Pages
             if (EditAccountOptions.SelectedItem == "Change Password")
             {
                 ChangePassword changePasswordPage = new ChangePassword();
+                changePasswordPage.userAccount = this.userAccount;
                 changePasswordPage.Show();
             }
             if (EditAccountOptions.SelectedItem == "Check Member Status")
             {
                 CheckMemberStatus memStatusPage = new CheckMemberStatus();
+                memStatusPage.userAccount = this.userAccount;
                 memStatusPage.Show();
             }
             if (EditAccountOptions.SelectedItem == "Edit Account Info")
             {
                 EditAccountInfo editInfoPage = new EditAccountInfo();
+                editInfoPage.userAccount = this.userAccount;
                 editInfoPage.Show();
             }
             if (EditAccountOptions.SelectedItem == "Manage Payment Methods")
             {
                 ManagePaymentMethods changePaymentPage = new ManagePaymentMethods();
+                changePaymentPage.userAccount = this.userAccount;
                 changePaymentPage.Show();
             }
             if (EditAccountOptions.SelectedItem == "Update Address")
             {
                 UpdateAddress updateAddressPage = new UpdateAddress();
+                updateAddressPage.userAccount = this.userAccount;
                 updateAddressPage.Show();
             }
         }
