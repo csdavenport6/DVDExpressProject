@@ -93,6 +93,7 @@
             this.AddButton.TabIndex = 4;
             this.AddButton.Text = "Add Movie";
             this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // DeleteButton
             // 

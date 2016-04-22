@@ -12,6 +12,7 @@ namespace DVDExpressProject.Forms.Admin_Pages
 {
     public partial class _A_ManageInventory : Form
     {
+        public Member adminAccount { get; set; }
         private AdminMainPage adminPage;
 
         public AdminMainPage AdminPage
@@ -59,6 +60,12 @@ namespace DVDExpressProject.Forms.Admin_Pages
         private void FAQButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Admins are able to manage the inventory of DVDExpress.");
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            AddMovie addMoviePage = new AddMovie();
+            addMoviePage.Show();
         }
     }
 }
