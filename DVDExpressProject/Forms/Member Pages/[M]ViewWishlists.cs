@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Linq;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,22 @@ namespace DVDExpressProject.Forms.Member_Pages
 
         private void _M_ViewWishlists_Load(object sender, EventArgs e)
         {
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Wishlist> Wishlists = db.GetTable<Wishlist>();
+            Table<Movie> MoviesInWishlist = db.GetTable<Movie>();
 
+            var matchWishlists =
+                from wishlist in Wishlists
+                where wishlist.MemberID == userAccount.MemberID
+                select wishlist;
+
+            List<string> userWishlists = new List<string>();
+
+            foreach (Wishlist wishlist in matchWishlists)
+            {
+                userWishlists.Add(wishlist.Title);
+            }
+            WishlistBox.DataSource = userWishlists;
         }
 
         //Search
@@ -74,6 +90,72 @@ namespace DVDExpressProject.Forms.Member_Pages
         private void FAQButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This form allows the user to view and manage their wishlists.");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void WishlistBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Wishlist> Wishlists = db.GetTable<Wishlist>();
+            Table<Movie> Movies = db.GetTable<Movie>();
+
+            var getCorrectWishlist =
+                from wishlist in Wishlists
+                where wishlist.Title == WishlistBox.SelectedItem
+                select wishlist;
+
+            DataTable MoviesInWishlist = new DataTable();
+            MoviesInWishlist.Columns.Add("Title");
+            MoviesInWishlist.Columns.Add("Genre");
+            MoviesInWishlist.Columns.Add("Run Time");
+            MoviesInWishlist.Columns.Add("Rating");
+
+            foreach (Wishlist wishlist in getCorrectWishlist)
+            {
+                var getCorrectMovies =
+                    from movie in Movies
+                    where movie.MovieID == wishlist.MovieID
+                    select movie;
+                foreach (Movie movie in getCorrectMovies)
+                {
+                    MoviesInWishlist.Rows.Add(movie.Title, movie.Genre, movie.RunTime, movie.Rating);
+                }                    
+            }
+            WishlistView.DataSource = MoviesInWishlist;
+        }
+
+        private void AddWishlist_Click(object sender, EventArgs e)
+        {
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Wishlist> Wishlists = db.GetTable<Wishlist>();
+
+            var getNextWishlistID =
+                from wishlist in Wishlists
+                orderby wishlist.WishlistID descending
+                select wishlist.WishlistID;
+
+            int newWishlistID = getNextWishlistID.First() + 1;
+
+            if (!NewWishlistName.Text.Any())
+            {
+                MessageBox.Show("Error: Please enter a name for your new wishlist.");
+                return;
+            }
+
+            Wishlist newWishlist = new Wishlist
+            {
+                WishlistID = newWishlistID,
+                MovieID = null,
+                Title = NewWishlistName.Text,
+                MemberID = userAccount.MemberID
+            };
+            db.Wishlists.InsertOnSubmit(newWishlist);
+            db.SubmitChanges();
+            MessageBox.Show("New Wishlist Created!");
         }
     }
 }
