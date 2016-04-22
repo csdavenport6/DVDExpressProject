@@ -26,20 +26,6 @@ namespace DVDExpressProject.Forms.Admin_Pages
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void _A_ManageInventory_Load(object sender, EventArgs e)
         {
@@ -66,6 +52,18 @@ namespace DVDExpressProject.Forms.Admin_Pages
         {
             AddMovie addMoviePage = new AddMovie();
             addMoviePage.Show();
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            UpdateMovie updateMoviePage = new UpdateMovie();
+            updateMoviePage.Show();
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            DeleteMovie deleteMoviePage = new DeleteMovie();
+            deleteMoviePage.Show();
         }
     }
 }
