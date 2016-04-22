@@ -93,7 +93,7 @@
             // 
             // AdminLogin
             // 
-            this.AdminLogin.Location = new System.Drawing.Point(892, 738);
+            this.AdminLogin.Location = new System.Drawing.Point(892, 727);
             this.AdminLogin.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.AdminLogin.Name = "AdminLogin";
             this.AdminLogin.Size = new System.Drawing.Size(188, 52);
