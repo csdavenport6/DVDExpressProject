@@ -181,7 +181,7 @@
             this.Controls.Add(this.GenreBox);
             this.Controls.Add(this.TitleBox);
             this.Name = "UpdateMovie";
-            this.Text = "UpdateMovie";
+            this.Text = "Update Movie";
             this.ResumeLayout(false);
             this.PerformLayout();
 

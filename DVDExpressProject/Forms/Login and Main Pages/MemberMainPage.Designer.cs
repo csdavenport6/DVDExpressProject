@@ -48,10 +48,10 @@
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(352, 241);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.listView1.Location = new System.Drawing.Point(264, 193);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(879, 554);
+            this.listView1.Size = new System.Drawing.Size(660, 444);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -63,15 +63,14 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1277, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(958, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(92, 36);
+            this.AboutButton.Size = new System.Drawing.Size(74, 29);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -80,33 +79,33 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Size = new System.Drawing.Size(131, 30);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(352, 83);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(264, 66);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(877, 131);
+            this.pictureBox2.Size = new System.Drawing.Size(658, 105);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
             // ViewAcctButton
             // 
-            this.ViewAcctButton.Location = new System.Drawing.Point(4, 535);
-            this.ViewAcctButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.ViewAcctButton.Location = new System.Drawing.Point(3, 432);
+            this.ViewAcctButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewAcctButton.Name = "ViewAcctButton";
-            this.ViewAcctButton.Size = new System.Drawing.Size(304, 125);
+            this.ViewAcctButton.Size = new System.Drawing.Size(228, 100);
             this.ViewAcctButton.TabIndex = 2;
             this.ViewAcctButton.Text = "Account";
             this.ViewAcctButton.UseVisualStyleBackColor = true;
@@ -114,10 +113,10 @@
             // 
             // ViewWishlistButton
             // 
-            this.ViewWishlistButton.Location = new System.Drawing.Point(4, 406);
-            this.ViewWishlistButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.ViewWishlistButton.Location = new System.Drawing.Point(3, 328);
+            this.ViewWishlistButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewWishlistButton.Name = "ViewWishlistButton";
-            this.ViewWishlistButton.Size = new System.Drawing.Size(304, 125);
+            this.ViewWishlistButton.Size = new System.Drawing.Size(228, 100);
             this.ViewWishlistButton.TabIndex = 1;
             this.ViewWishlistButton.Text = "Wishlist";
             this.ViewWishlistButton.UseVisualStyleBackColor = true;
@@ -125,10 +124,10 @@
             // 
             // ViewCartButton
             // 
-            this.ViewCartButton.Location = new System.Drawing.Point(4, 277);
-            this.ViewCartButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.ViewCartButton.Location = new System.Drawing.Point(3, 224);
+            this.ViewCartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewCartButton.Name = "ViewCartButton";
-            this.ViewCartButton.Size = new System.Drawing.Size(304, 125);
+            this.ViewCartButton.Size = new System.Drawing.Size(228, 100);
             this.ViewCartButton.TabIndex = 0;
             this.ViewCartButton.Text = "Cart";
             this.ViewCartButton.UseVisualStyleBackColor = true;
@@ -136,10 +135,10 @@
             // 
             // BrowseButton
             // 
-            this.BrowseButton.Location = new System.Drawing.Point(4, 131);
-            this.BrowseButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.BrowseButton.Location = new System.Drawing.Point(3, 106);
+            this.BrowseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BrowseButton.Name = "BrowseButton";
-            this.BrowseButton.Size = new System.Drawing.Size(307, 142);
+            this.BrowseButton.Size = new System.Drawing.Size(230, 114);
             this.BrowseButton.TabIndex = 4;
             this.BrowseButton.Text = "Browse Movies";
             this.BrowseButton.UseVisualStyleBackColor = true;
@@ -153,18 +152,18 @@
             this.flowLayoutPanel1.Controls.Add(this.ViewWishlistButton);
             this.flowLayoutPanel1.Controls.Add(this.ViewAcctButton);
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 61);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 49);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(309, 665);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(232, 532);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(4, 2);
-            this.SearchButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.SearchButton.Location = new System.Drawing.Point(3, 2);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(304, 125);
+            this.SearchButton.Size = new System.Drawing.Size(228, 100);
             this.SearchButton.TabIndex = 5;
             this.SearchButton.Text = "Search Movies";
             this.SearchButton.UseVisualStyleBackColor = true;
@@ -172,19 +171,19 @@
             // 
             // MemberMainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1277, 898);
+            this.ClientSize = new System.Drawing.Size(958, 718);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MemberMainPage";
-            this.Text = "MemberMainPage";
+            this.Text = "Home";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

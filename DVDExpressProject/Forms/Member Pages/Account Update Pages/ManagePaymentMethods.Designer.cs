@@ -51,10 +51,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(284, 248);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(213, 198);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 37);
+            this.label1.Size = new System.Drawing.Size(176, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Card Number:";
             // 
@@ -64,10 +63,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(411, 375);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(308, 300);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 37);
+            this.label2.Size = new System.Drawing.Size(70, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "CVV:";
             // 
@@ -77,27 +75,24 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(260, 310);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(195, 248);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 37);
+            this.label3.Size = new System.Drawing.Size(198, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Expiration Date:";
             // 
             // CardNumberText
             // 
-            this.CardNumberText.Location = new System.Drawing.Point(540, 246);
-            this.CardNumberText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CardNumberText.Location = new System.Drawing.Point(405, 197);
             this.CardNumberText.Name = "CardNumberText";
-            this.CardNumberText.Size = new System.Drawing.Size(336, 31);
+            this.CardNumberText.Size = new System.Drawing.Size(253, 26);
             this.CardNumberText.TabIndex = 3;
             // 
             // CVVText
             // 
-            this.CVVText.Location = new System.Drawing.Point(540, 375);
-            this.CVVText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CVVText.Location = new System.Drawing.Point(405, 300);
             this.CVVText.Name = "CVVText";
-            this.CVVText.Size = new System.Drawing.Size(336, 31);
+            this.CVVText.Size = new System.Drawing.Size(253, 26);
             this.CVVText.TabIndex = 4;
             // 
             // label4
@@ -106,10 +101,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Verdana", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(264, 114);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(198, 91);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(674, 45);
+            this.label4.Size = new System.Drawing.Size(516, 34);
             this.label4.TabIndex = 6;
             this.label4.Text = "Update your billing information";
             // 
@@ -121,15 +115,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1236, 44);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(927, 35);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(92, 36);
+            this.AboutButton.Size = new System.Drawing.Size(74, 29);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -138,23 +132,22 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Size = new System.Drawing.Size(131, 30);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // UpdateButton
             // 
             this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.UpdateButton.Location = new System.Drawing.Point(640, 591);
-            this.UpdateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UpdateButton.Location = new System.Drawing.Point(480, 473);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(296, 92);
+            this.UpdateButton.Size = new System.Drawing.Size(222, 74);
             this.UpdateButton.TabIndex = 8;
             this.UpdateButton.Text = "Update Card Information";
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -162,10 +155,9 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(300, 591);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelButton.Location = new System.Drawing.Point(225, 473);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(296, 92);
+            this.CancelButton.Size = new System.Drawing.Size(222, 74);
             this.CancelButton.TabIndex = 9;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
@@ -173,20 +165,19 @@
             // 
             // ExpDateEntry
             // 
-            this.ExpDateEntry.Location = new System.Drawing.Point(540, 316);
-            this.ExpDateEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExpDateEntry.Location = new System.Drawing.Point(405, 253);
             this.ExpDateEntry.Mask = "00/00";
             this.ExpDateEntry.Name = "ExpDateEntry";
-            this.ExpDateEntry.Size = new System.Drawing.Size(67, 31);
+            this.ExpDateEntry.Size = new System.Drawing.Size(51, 26);
             this.ExpDateEntry.TabIndex = 40;
             // 
             // ManagePaymentMethods
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1236, 971);
+            this.ClientSize = new System.Drawing.Size(927, 777);
             this.Controls.Add(this.ExpDateEntry);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.UpdateButton);
@@ -197,9 +188,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ManagePaymentMethods";
-            this.Text = "ManagePaymentMethods";
+            this.Text = "Manage Payment Method";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

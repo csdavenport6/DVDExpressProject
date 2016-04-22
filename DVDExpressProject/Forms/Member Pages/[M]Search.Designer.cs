@@ -37,6 +37,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.MovieList = new System.Windows.Forms.DataGridView();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.runTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ratingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DaysForRent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movieBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s2T5DataSet = new DVDExpressProject.S2T5DataSet();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -55,11 +60,6 @@
             this.AddToWishlist = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.movieBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.runTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ratingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DaysForRent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.MovieList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).BeginInit();
@@ -153,6 +153,41 @@
             this.MovieList.RowTemplate.Height = 28;
             this.MovieList.Size = new System.Drawing.Size(656, 357);
             this.MovieList.TabIndex = 20;
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genreDataGridViewTextBoxColumn
+            // 
+            this.genreDataGridViewTextBoxColumn.DataPropertyName = "Genre";
+            this.genreDataGridViewTextBoxColumn.HeaderText = "Genre";
+            this.genreDataGridViewTextBoxColumn.Name = "genreDataGridViewTextBoxColumn";
+            this.genreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // runTimeDataGridViewTextBoxColumn
+            // 
+            this.runTimeDataGridViewTextBoxColumn.DataPropertyName = "RunTime";
+            this.runTimeDataGridViewTextBoxColumn.HeaderText = "Run Time";
+            this.runTimeDataGridViewTextBoxColumn.Name = "runTimeDataGridViewTextBoxColumn";
+            this.runTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ratingDataGridViewTextBoxColumn
+            // 
+            this.ratingDataGridViewTextBoxColumn.DataPropertyName = "Rating";
+            this.ratingDataGridViewTextBoxColumn.HeaderText = "Rating";
+            this.ratingDataGridViewTextBoxColumn.Name = "ratingDataGridViewTextBoxColumn";
+            this.ratingDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // DaysForRent
+            // 
+            this.DaysForRent.DataPropertyName = "DaysForRent";
+            this.DaysForRent.HeaderText = "Days For Rent";
+            this.DaysForRent.Name = "DaysForRent";
+            this.DaysForRent.ReadOnly = true;
             // 
             // movieBindingSource
             // 
@@ -306,41 +341,6 @@
             this.movieBindingSource1.DataMember = "Movie";
             this.movieBindingSource1.DataSource = this.s2T5DataSet;
             // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // genreDataGridViewTextBoxColumn
-            // 
-            this.genreDataGridViewTextBoxColumn.DataPropertyName = "Genre";
-            this.genreDataGridViewTextBoxColumn.HeaderText = "Genre";
-            this.genreDataGridViewTextBoxColumn.Name = "genreDataGridViewTextBoxColumn";
-            this.genreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // runTimeDataGridViewTextBoxColumn
-            // 
-            this.runTimeDataGridViewTextBoxColumn.DataPropertyName = "RunTime";
-            this.runTimeDataGridViewTextBoxColumn.HeaderText = "Run Time";
-            this.runTimeDataGridViewTextBoxColumn.Name = "runTimeDataGridViewTextBoxColumn";
-            this.runTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ratingDataGridViewTextBoxColumn
-            // 
-            this.ratingDataGridViewTextBoxColumn.DataPropertyName = "Rating";
-            this.ratingDataGridViewTextBoxColumn.HeaderText = "Rating";
-            this.ratingDataGridViewTextBoxColumn.Name = "ratingDataGridViewTextBoxColumn";
-            this.ratingDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // DaysForRent
-            // 
-            this.DaysForRent.DataPropertyName = "DaysForRent";
-            this.DaysForRent.HeaderText = "Days For Rent";
-            this.DaysForRent.Name = "DaysForRent";
-            this.DaysForRent.ReadOnly = true;
-            // 
             // _M_Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -365,7 +365,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "_M_Search";
-            this.Text = "_M_Search";
+            this.Text = "Search Movies";
             this.Load += new System.EventHandler(this._M_Search_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MovieList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).EndInit();

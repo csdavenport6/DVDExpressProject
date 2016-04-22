@@ -50,36 +50,35 @@
             // 
             // DOBEntry
             // 
-            this.DOBEntry.Location = new System.Drawing.Point(211, 360);
-            this.DOBEntry.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.DOBEntry.Location = new System.Drawing.Point(158, 288);
+            this.DOBEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DOBEntry.Name = "DOBEntry";
-            this.DOBEntry.Size = new System.Drawing.Size(400, 31);
+            this.DOBEntry.Size = new System.Drawing.Size(301, 26);
             this.DOBEntry.TabIndex = 46;
             // 
             // LastNameEntry
             // 
-            this.LastNameEntry.Location = new System.Drawing.Point(211, 304);
-            this.LastNameEntry.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.LastNameEntry.Location = new System.Drawing.Point(158, 243);
+            this.LastNameEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.LastNameEntry.Name = "LastNameEntry";
-            this.LastNameEntry.Size = new System.Drawing.Size(400, 31);
+            this.LastNameEntry.Size = new System.Drawing.Size(301, 26);
             this.LastNameEntry.TabIndex = 45;
             // 
             // FirstNameEntry
             // 
-            this.FirstNameEntry.Location = new System.Drawing.Point(211, 252);
-            this.FirstNameEntry.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.FirstNameEntry.Location = new System.Drawing.Point(158, 202);
+            this.FirstNameEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.FirstNameEntry.Name = "FirstNameEntry";
-            this.FirstNameEntry.Size = new System.Drawing.Size(400, 31);
+            this.FirstNameEntry.Size = new System.Drawing.Size(301, 26);
             this.FirstNameEntry.TabIndex = 44;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(56, 360);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(42, 288);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 31);
+            this.label7.Size = new System.Drawing.Size(75, 25);
             this.label7.TabIndex = 43;
             this.label7.Text = "D.O.B.";
             // 
@@ -87,10 +86,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(56, 304);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(42, 243);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(145, 31);
+            this.label6.Size = new System.Drawing.Size(115, 25);
             this.label6.TabIndex = 42;
             this.label6.Text = "Last Name";
             // 
@@ -98,38 +96,35 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(56, 252);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(42, 202);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 31);
+            this.label5.Size = new System.Drawing.Size(116, 25);
             this.label5.TabIndex = 41;
             this.label5.Text = "First Name";
             // 
             // UsernameEntry
             // 
-            this.UsernameEntry.Location = new System.Drawing.Point(211, 415);
-            this.UsernameEntry.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UsernameEntry.Location = new System.Drawing.Point(158, 332);
+            this.UsernameEntry.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.UsernameEntry.Name = "UsernameEntry";
-            this.UsernameEntry.Size = new System.Drawing.Size(400, 31);
+            this.UsernameEntry.Size = new System.Drawing.Size(301, 26);
             this.UsernameEntry.TabIndex = 49;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 415);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(42, 332);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 31);
+            this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 47;
             this.label1.Text = "Username";
             // 
             // SaveChanges
             // 
-            this.SaveChanges.Location = new System.Drawing.Point(572, 568);
-            this.SaveChanges.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SaveChanges.Location = new System.Drawing.Point(429, 454);
             this.SaveChanges.Name = "SaveChanges";
-            this.SaveChanges.Size = new System.Drawing.Size(272, 118);
+            this.SaveChanges.Size = new System.Drawing.Size(204, 94);
             this.SaveChanges.TabIndex = 50;
             this.SaveChanges.Text = "Save Changes";
             this.SaveChanges.UseVisualStyleBackColor = true;
@@ -143,15 +138,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1148, 40);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(861, 33);
             this.menuStrip1.TabIndex = 51;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(92, 36);
+            this.AboutButton.Size = new System.Drawing.Size(74, 29);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -160,33 +155,32 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Size = new System.Drawing.Size(131, 30);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(121, 76);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(91, 61);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(876, 131);
+            this.pictureBox2.Size = new System.Drawing.Size(657, 105);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(204, 568);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelButton.Location = new System.Drawing.Point(153, 454);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(272, 111);
+            this.CancelButton.Size = new System.Drawing.Size(204, 89);
             this.CancelButton.TabIndex = 52;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
@@ -194,11 +188,11 @@
             // 
             // EditAccountInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1148, 908);
+            this.ClientSize = new System.Drawing.Size(861, 726);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SaveChanges);
             this.Controls.Add(this.UsernameEntry);
@@ -212,9 +206,9 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "EditAccountInfo";
-            this.Text = "EditAccountInfo";
+            this.Text = "Edit Account Information";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

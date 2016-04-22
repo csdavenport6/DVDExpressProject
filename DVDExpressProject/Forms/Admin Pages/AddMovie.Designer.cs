@@ -162,7 +162,7 @@
             this.Controls.Add(this.GenreBox);
             this.Controls.Add(this.TitleBox);
             this.Name = "AddMovie";
-            this.Text = "AddMovie";
+            this.Text = "Add Movie";
             this.ResumeLayout(false);
             this.PerformLayout();
 

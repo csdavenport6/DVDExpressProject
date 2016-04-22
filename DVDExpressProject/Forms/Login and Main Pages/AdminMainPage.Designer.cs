@@ -44,10 +44,9 @@
             // ManageMemAcc
             // 
             this.ManageMemAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ManageMemAcc.Location = new System.Drawing.Point(147, 329);
-            this.ManageMemAcc.Margin = new System.Windows.Forms.Padding(4);
+            this.ManageMemAcc.Location = new System.Drawing.Point(110, 263);
             this.ManageMemAcc.Name = "ManageMemAcc";
-            this.ManageMemAcc.Size = new System.Drawing.Size(414, 167);
+            this.ManageMemAcc.Size = new System.Drawing.Size(310, 134);
             this.ManageMemAcc.TabIndex = 3;
             this.ManageMemAcc.Text = "Member Account Management";
             this.ManageMemAcc.UseVisualStyleBackColor = true;
@@ -56,10 +55,9 @@
             // InventManage
             // 
             this.InventManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InventManage.Location = new System.Drawing.Point(640, 329);
-            this.InventManage.Margin = new System.Windows.Forms.Padding(4);
+            this.InventManage.Location = new System.Drawing.Point(480, 263);
             this.InventManage.Name = "InventManage";
-            this.InventManage.Size = new System.Drawing.Size(414, 167);
+            this.InventManage.Size = new System.Drawing.Size(310, 134);
             this.InventManage.TabIndex = 4;
             this.InventManage.Text = "Inventory Management";
             this.InventManage.UseVisualStyleBackColor = true;
@@ -73,15 +71,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1244, 44);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(933, 35);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(92, 36);
+            this.AboutButton.Size = new System.Drawing.Size(74, 29);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -90,23 +88,23 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Size = new System.Drawing.Size(131, 30);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DVDExpressProject.Properties.Resources.dvdexpress_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(176, 90);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(132, 72);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(878, 131);
+            this.pictureBox2.Size = new System.Drawing.Size(658, 105);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -114,10 +112,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(438, 617);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(328, 494);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(322, 106);
+            this.button1.Size = new System.Drawing.Size(242, 85);
             this.button1.TabIndex = 13;
             this.button1.Text = "Return";
             this.button1.UseVisualStyleBackColor = true;
@@ -125,20 +122,19 @@
             // 
             // AdminMainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1244, 915);
+            this.ClientSize = new System.Drawing.Size(933, 732);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.InventManage);
             this.Controls.Add(this.ManageMemAcc);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminMainPage";
-            this.Text = "AdminMainPage";
+            this.Text = "Admin Main Page";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

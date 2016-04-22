@@ -126,12 +126,10 @@ namespace DVDExpressProject.Forms.Member_Pages
                 from wishlist in Wishlists
                 where (wishlist.Title == WishlistBox.SelectedItem && wishlist.MemberID == userAccount.MemberID)
                 select wishlist;
-
-
-
+            
             var getCorrectMovie =
                 from movie in Movies
-                where movie.Title == MovieList.SelectedCells.ToString()
+                where movie.Title == MovieList.SelectedCells[0].Value.ToString()
                 select movie;
 
             foreach(Wishlist wishlist in getCorrectWishlist)

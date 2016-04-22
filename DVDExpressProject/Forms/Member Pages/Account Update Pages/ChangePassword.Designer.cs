@@ -51,10 +51,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(212, 150);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(159, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 37);
+            this.label1.Size = new System.Drawing.Size(277, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Type your old password:";
             // 
@@ -64,10 +63,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(252, 278);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(189, 222);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(309, 37);
+            this.label2.Size = new System.Drawing.Size(232, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Your new password:";
             // 
@@ -77,35 +75,31 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(268, 388);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(201, 310);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(286, 37);
+            this.label3.Size = new System.Drawing.Size(214, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirm password:";
             // 
             // OldPasswordEntry
             // 
-            this.OldPasswordEntry.Location = new System.Drawing.Point(248, 200);
-            this.OldPasswordEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OldPasswordEntry.Location = new System.Drawing.Point(186, 160);
             this.OldPasswordEntry.Name = "OldPasswordEntry";
-            this.OldPasswordEntry.Size = new System.Drawing.Size(305, 31);
+            this.OldPasswordEntry.Size = new System.Drawing.Size(230, 26);
             this.OldPasswordEntry.TabIndex = 3;
             // 
             // NewPasswordEntry
             // 
-            this.NewPasswordEntry.Location = new System.Drawing.Point(248, 318);
-            this.NewPasswordEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NewPasswordEntry.Location = new System.Drawing.Point(186, 254);
             this.NewPasswordEntry.Name = "NewPasswordEntry";
-            this.NewPasswordEntry.Size = new System.Drawing.Size(305, 31);
+            this.NewPasswordEntry.Size = new System.Drawing.Size(230, 26);
             this.NewPasswordEntry.TabIndex = 4;
             // 
             // ConfirmPasswordEntry
             // 
-            this.ConfirmPasswordEntry.Location = new System.Drawing.Point(253, 428);
-            this.ConfirmPasswordEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConfirmPasswordEntry.Location = new System.Drawing.Point(190, 342);
             this.ConfirmPasswordEntry.Name = "ConfirmPasswordEntry";
-            this.ConfirmPasswordEntry.Size = new System.Drawing.Size(305, 31);
+            this.ConfirmPasswordEntry.Size = new System.Drawing.Size(230, 26);
             this.ConfirmPasswordEntry.TabIndex = 5;
             // 
             // menuStrip1
@@ -116,15 +110,15 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(820, 44);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(615, 35);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(92, 36);
+            this.AboutButton.Size = new System.Drawing.Size(74, 29);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -133,23 +127,22 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Size = new System.Drawing.Size(131, 30);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(325, 538);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SaveButton.Location = new System.Drawing.Point(244, 430);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(192, 62);
+            this.SaveButton.Size = new System.Drawing.Size(144, 50);
             this.SaveButton.TabIndex = 7;
             this.SaveButton.Text = "Save New Password";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -157,10 +150,9 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(96, 538);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelButton.Location = new System.Drawing.Point(72, 430);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(192, 62);
+            this.CancelButton.Size = new System.Drawing.Size(144, 50);
             this.CancelButton.TabIndex = 8;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
@@ -168,21 +160,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(557, 538);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(418, 430);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 62);
+            this.button1.Size = new System.Drawing.Size(144, 50);
             this.button1.TabIndex = 9;
             this.button1.Text = "Return";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // ChangePassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(820, 694);
+            this.ClientSize = new System.Drawing.Size(615, 555);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SaveButton);
@@ -193,9 +184,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ChangePassword";
-            this.Text = "ChangePassword";
+            this.Text = "Change Password";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

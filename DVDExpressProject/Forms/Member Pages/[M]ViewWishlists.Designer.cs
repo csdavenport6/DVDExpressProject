@@ -253,7 +253,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox2);
             this.Name = "_M_ViewWishlists";
-            this.Text = "_M_ViewWishlists";
+            this.Text = "View Wishlists";
             this.Load += new System.EventHandler(this._M_ViewWishlists_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

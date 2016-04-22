@@ -79,7 +79,7 @@
             this.Controls.Add(this.Return);
             this.Controls.Add(this.DeleteButton);
             this.Name = "DeleteMovie";
-            this.Text = "DeleteMovie";
+            this.Text = "Delete Movie";
             this.ResumeLayout(false);
             this.PerformLayout();
 

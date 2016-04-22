@@ -48,15 +48,14 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1134, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(850, 33);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(92, 36);
+            this.AboutButton.Size = new System.Drawing.Size(74, 29);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -65,13 +64,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // FAQButton
             // 
             this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Size = new System.Drawing.Size(131, 30);
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
@@ -79,10 +78,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(166, 83);
+            this.label1.Location = new System.Drawing.Point(124, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(817, 38);
+            this.label1.Size = new System.Drawing.Size(605, 29);
             this.label1.TabIndex = 7;
             this.label1.Text = "Current Membership status (gold, silver, bronze):";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -91,10 +90,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(166, 273);
+            this.label2.Location = new System.Drawing.Point(124, 218);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 38);
+            this.label2.Size = new System.Drawing.Size(244, 29);
             this.label2.TabIndex = 8;
             this.label2.Text = "Unlocked Rewards:";
             // 
@@ -102,19 +101,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(166, 492);
+            this.label3.Location = new System.Drawing.Point(124, 394);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(292, 38);
+            this.label3.Size = new System.Drawing.Size(219, 29);
             this.label3.TabIndex = 9;
             this.label3.Text = "Locked Rewards:";
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(390, 712);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackButton.Location = new System.Drawing.Point(292, 570);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(282, 98);
+            this.BackButton.Size = new System.Drawing.Size(212, 78);
             this.BackButton.TabIndex = 10;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
@@ -122,19 +120,18 @@
             // 
             // CheckMemberStatus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1134, 850);
+            this.ClientSize = new System.Drawing.Size(850, 680);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CheckMemberStatus";
-            this.Text = "CheckMemberStatus";
+            this.Text = "Check Member Status";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
