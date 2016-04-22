@@ -48,5 +48,10 @@ namespace DVDExpressProject.Forms.Admin_Pages
             db.SubmitChanges();
             MessageBox.Show("Movie Entry Updated!");
         }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

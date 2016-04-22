@@ -40,5 +40,10 @@ namespace DVDExpressProject.Forms.Admin_Pages
             MessageBox.Show("Movie Deleted.");
             MovieIDBox.Clear();
         }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

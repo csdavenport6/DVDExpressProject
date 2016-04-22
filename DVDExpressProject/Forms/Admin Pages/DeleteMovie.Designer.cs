@@ -37,33 +37,38 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(192, 86);
+            this.label5.Location = new System.Drawing.Point(256, 108);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 20);
+            this.label5.Size = new System.Drawing.Size(102, 25);
             this.label5.TabIndex = 40;
             this.label5.Text = "Movie ID:";
             // 
             // MovieIDBox
             // 
-            this.MovieIDBox.Location = new System.Drawing.Point(273, 83);
+            this.MovieIDBox.Location = new System.Drawing.Point(364, 104);
+            this.MovieIDBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MovieIDBox.Name = "MovieIDBox";
-            this.MovieIDBox.Size = new System.Drawing.Size(100, 26);
+            this.MovieIDBox.Size = new System.Drawing.Size(132, 31);
             this.MovieIDBox.TabIndex = 39;
             // 
             // Return
             // 
-            this.Return.Location = new System.Drawing.Point(80, 211);
+            this.Return.Location = new System.Drawing.Point(107, 264);
+            this.Return.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Return.Name = "Return";
-            this.Return.Size = new System.Drawing.Size(152, 81);
+            this.Return.Size = new System.Drawing.Size(203, 101);
             this.Return.TabIndex = 38;
             this.Return.Text = "Return";
             this.Return.UseVisualStyleBackColor = true;
+            this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(338, 211);
+            this.DeleteButton.Location = new System.Drawing.Point(451, 264);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(177, 81);
+            this.DeleteButton.Size = new System.Drawing.Size(236, 101);
             this.DeleteButton.TabIndex = 35;
             this.DeleteButton.Text = "Delete Movie Entry";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -71,13 +76,14 @@
             // 
             // DeleteMovie
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(601, 366);
+            this.ClientSize = new System.Drawing.Size(801, 458);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.MovieIDBox);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.DeleteButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DeleteMovie";
             this.Text = "Delete Movie";
             this.ResumeLayout(false);
