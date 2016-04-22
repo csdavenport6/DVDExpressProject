@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_A_ManageInventory));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             this.ViewButton = new System.Windows.Forms.Button();
             this.EditButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
             this.ReturnButton = new System.Windows.Forms.Button();
-            this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,15 +49,14 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(524, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1048, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "About";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(52, 22);
+            this.AboutButton.Size = new System.Drawing.Size(92, 36);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -65,15 +65,22 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // FAQButton
+            // 
+            this.FAQButton.Name = "FAQButton";
+            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Text = "FAQ";
+            this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // ViewButton
             // 
-            this.ViewButton.Location = new System.Drawing.Point(180, 63);
-            this.ViewButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ViewButton.Location = new System.Drawing.Point(360, 121);
+            this.ViewButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(150, 38);
+            this.ViewButton.Size = new System.Drawing.Size(300, 73);
             this.ViewButton.TabIndex = 2;
             this.ViewButton.Text = "View Current Inventory";
             this.ViewButton.UseVisualStyleBackColor = true;
@@ -81,10 +88,10 @@
             // 
             // EditButton
             // 
-            this.EditButton.Location = new System.Drawing.Point(180, 112);
-            this.EditButton.Margin = new System.Windows.Forms.Padding(2);
+            this.EditButton.Location = new System.Drawing.Point(360, 215);
+            this.EditButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(150, 38);
+            this.EditButton.Size = new System.Drawing.Size(300, 73);
             this.EditButton.TabIndex = 3;
             this.EditButton.Text = "Edit Entries";
             this.EditButton.UseVisualStyleBackColor = true;
@@ -92,58 +99,53 @@
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(180, 160);
-            this.AddButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddButton.Location = new System.Drawing.Point(360, 308);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(150, 38);
+            this.AddButton.Size = new System.Drawing.Size(300, 73);
             this.AddButton.TabIndex = 4;
             this.AddButton.Text = "Add Entries";
             this.AddButton.UseVisualStyleBackColor = true;
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(180, 209);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DeleteButton.Location = new System.Drawing.Point(360, 402);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(150, 38);
+            this.DeleteButton.Size = new System.Drawing.Size(300, 73);
             this.DeleteButton.TabIndex = 5;
             this.DeleteButton.Text = "Delete Entries";
             this.DeleteButton.UseVisualStyleBackColor = true;
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(270, 264);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SaveButton.Location = new System.Drawing.Point(540, 508);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(150, 38);
+            this.SaveButton.Size = new System.Drawing.Size(300, 73);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save Updates";
             this.SaveButton.UseVisualStyleBackColor = true;
             // 
             // ReturnButton
             // 
-            this.ReturnButton.Location = new System.Drawing.Point(94, 264);
-            this.ReturnButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ReturnButton.Location = new System.Drawing.Point(188, 508);
+            this.ReturnButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReturnButton.Name = "ReturnButton";
-            this.ReturnButton.Size = new System.Drawing.Size(150, 38);
+            this.ReturnButton.Size = new System.Drawing.Size(300, 73);
             this.ReturnButton.TabIndex = 7;
             this.ReturnButton.Text = "Return";
             this.ReturnButton.UseVisualStyleBackColor = true;
             this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
-            // FAQButton
-            // 
-            this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(152, 22);
-            this.FAQButton.Text = "FAQ";
-            this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
-            // 
             // _A_ManageInventory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(524, 335);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1048, 684);
             this.Controls.Add(this.ReturnButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.DeleteButton);
@@ -152,7 +154,7 @@
             this.Controls.Add(this.ViewButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "_A_ManageInventory";
             this.Text = "_A_ManageInventory";
             this.Load += new System.EventHandler(this._A_ManageInventory_Load);

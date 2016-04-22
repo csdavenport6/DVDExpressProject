@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_A_ManageAccts));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.AccountReportButton = new System.Windows.Forms.Button();
             this.TransactionReportButton = new System.Windows.Forms.Button();
             this.AccountListing = new System.Windows.Forms.ListBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.ReturnButton = new System.Windows.Forms.Button();
-            this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,15 +49,14 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(524, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1048, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "About";
             // 
             // AboutButton
             // 
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(52, 22);
+            this.AboutButton.Size = new System.Drawing.Size(92, 36);
             this.AboutButton.Text = "About";
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
@@ -65,35 +65,42 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FAQButton});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // FAQButton
+            // 
+            this.FAQButton.Name = "FAQButton";
+            this.FAQButton.Size = new System.Drawing.Size(135, 36);
+            this.FAQButton.Text = "FAQ";
+            this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(90, 239);
-            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
+            this.UpdateButton.Location = new System.Drawing.Point(180, 460);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(176, 41);
+            this.UpdateButton.Size = new System.Drawing.Size(352, 79);
             this.UpdateButton.TabIndex = 2;
             this.UpdateButton.Text = "Update Customer Account";
             this.UpdateButton.UseVisualStyleBackColor = true;
             // 
             // AccountReportButton
             // 
-            this.AccountReportButton.Location = new System.Drawing.Point(90, 182);
-            this.AccountReportButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AccountReportButton.Location = new System.Drawing.Point(180, 350);
+            this.AccountReportButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AccountReportButton.Name = "AccountReportButton";
-            this.AccountReportButton.Size = new System.Drawing.Size(176, 41);
+            this.AccountReportButton.Size = new System.Drawing.Size(352, 79);
             this.AccountReportButton.TabIndex = 3;
             this.AccountReportButton.Text = "Customer Account Report";
             this.AccountReportButton.UseVisualStyleBackColor = true;
             // 
             // TransactionReportButton
             // 
-            this.TransactionReportButton.Location = new System.Drawing.Point(280, 182);
-            this.TransactionReportButton.Margin = new System.Windows.Forms.Padding(2);
+            this.TransactionReportButton.Location = new System.Drawing.Point(560, 350);
+            this.TransactionReportButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TransactionReportButton.Name = "TransactionReportButton";
-            this.TransactionReportButton.Size = new System.Drawing.Size(176, 41);
+            this.TransactionReportButton.Size = new System.Drawing.Size(352, 79);
             this.TransactionReportButton.TabIndex = 4;
             this.TransactionReportButton.Text = "Produce Transaction Report";
             this.TransactionReportButton.UseVisualStyleBackColor = true;
@@ -101,46 +108,42 @@
             // AccountListing
             // 
             this.AccountListing.FormattingEnabled = true;
-            this.AccountListing.Location = new System.Drawing.Point(100, 56);
-            this.AccountListing.Margin = new System.Windows.Forms.Padding(2);
+            this.AccountListing.ItemHeight = 25;
+            this.AccountListing.Location = new System.Drawing.Point(200, 108);
+            this.AccountListing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AccountListing.Name = "AccountListing";
-            this.AccountListing.Size = new System.Drawing.Size(342, 95);
+            this.AccountListing.Size = new System.Drawing.Size(680, 179);
             this.AccountListing.TabIndex = 5;
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(280, 239);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SaveButton.Location = new System.Drawing.Point(560, 460);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(176, 41);
+            this.SaveButton.Size = new System.Drawing.Size(352, 79);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save Update";
             this.SaveButton.UseVisualStyleBackColor = true;
             // 
             // ReturnButton
             // 
-            this.ReturnButton.Location = new System.Drawing.Point(396, 296);
-            this.ReturnButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ReturnButton.Location = new System.Drawing.Point(792, 569);
+            this.ReturnButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReturnButton.Name = "ReturnButton";
-            this.ReturnButton.Size = new System.Drawing.Size(98, 32);
+            this.ReturnButton.Size = new System.Drawing.Size(196, 62);
             this.ReturnButton.TabIndex = 7;
             this.ReturnButton.Text = "Return";
             this.ReturnButton.UseVisualStyleBackColor = true;
             this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
-            // FAQButton
-            // 
-            this.FAQButton.Name = "FAQButton";
-            this.FAQButton.Size = new System.Drawing.Size(152, 22);
-            this.FAQButton.Text = "FAQ";
-            this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
-            // 
             // _A_ManageAccts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(524, 345);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1048, 663);
             this.Controls.Add(this.ReturnButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.AccountListing);
@@ -148,7 +151,7 @@
             this.Controls.Add(this.AccountReportButton);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "_A_ManageAccts";
             this.Text = "_A_ManageAccts";
             this.menuStrip1.ResumeLayout(false);
