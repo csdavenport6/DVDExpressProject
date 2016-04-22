@@ -37,11 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.MovieList = new System.Windows.Forms.DataGridView();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.runTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ratingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.daysForRentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movieBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.s2T5DataSet = new DVDExpressProject.S2T5DataSet();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -55,11 +50,22 @@
             this.AboutButton = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FAQButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.WishlistBox = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.AddToWishlist = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.movieBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.runTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ratingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DaysForRent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.MovieList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.s2T5DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // BrowseButton
@@ -139,49 +145,14 @@
             this.genreDataGridViewTextBoxColumn,
             this.runTimeDataGridViewTextBoxColumn,
             this.ratingDataGridViewTextBoxColumn,
-            this.daysForRentDataGridViewTextBoxColumn});
+            this.DaysForRent});
             this.MovieList.DataSource = this.movieBindingSource;
             this.MovieList.Location = new System.Drawing.Point(292, 217);
             this.MovieList.Name = "MovieList";
             this.MovieList.ReadOnly = true;
             this.MovieList.RowTemplate.Height = 28;
-            this.MovieList.Size = new System.Drawing.Size(605, 357);
+            this.MovieList.Size = new System.Drawing.Size(656, 357);
             this.MovieList.TabIndex = 20;
-            // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // genreDataGridViewTextBoxColumn
-            // 
-            this.genreDataGridViewTextBoxColumn.DataPropertyName = "Genre";
-            this.genreDataGridViewTextBoxColumn.HeaderText = "Genre";
-            this.genreDataGridViewTextBoxColumn.Name = "genreDataGridViewTextBoxColumn";
-            this.genreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // runTimeDataGridViewTextBoxColumn
-            // 
-            this.runTimeDataGridViewTextBoxColumn.DataPropertyName = "RunTime";
-            this.runTimeDataGridViewTextBoxColumn.HeaderText = "Run Time";
-            this.runTimeDataGridViewTextBoxColumn.Name = "runTimeDataGridViewTextBoxColumn";
-            this.runTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ratingDataGridViewTextBoxColumn
-            // 
-            this.ratingDataGridViewTextBoxColumn.DataPropertyName = "Rating";
-            this.ratingDataGridViewTextBoxColumn.HeaderText = "Rating";
-            this.ratingDataGridViewTextBoxColumn.Name = "ratingDataGridViewTextBoxColumn";
-            this.ratingDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // daysForRentDataGridViewTextBoxColumn
-            // 
-            this.daysForRentDataGridViewTextBoxColumn.DataPropertyName = "DaysForRent";
-            this.daysForRentDataGridViewTextBoxColumn.HeaderText = "Days For Rent";
-            this.daysForRentDataGridViewTextBoxColumn.Name = "daysForRentDataGridViewTextBoxColumn";
-            this.daysForRentDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // movieBindingSource
             // 
@@ -267,7 +238,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(948, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(991, 33);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -293,13 +264,94 @@
             this.FAQButton.Text = "FAQ";
             this.FAQButton.Click += new System.EventHandler(this.FAQButton_Click);
             // 
+            // WishlistBox
+            // 
+            this.WishlistBox.FormattingEnabled = true;
+            this.WishlistBox.ItemHeight = 20;
+            this.WishlistBox.Location = new System.Drawing.Point(292, 603);
+            this.WishlistBox.Name = "WishlistBox";
+            this.WishlistBox.Size = new System.Drawing.Size(155, 84);
+            this.WishlistBox.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(300, 580);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 20);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Available Wishlists";
+            // 
+            // AddToWishlist
+            // 
+            this.AddToWishlist.Location = new System.Drawing.Point(526, 603);
+            this.AddToWishlist.Name = "AddToWishlist";
+            this.AddToWishlist.Size = new System.Drawing.Size(166, 84);
+            this.AddToWishlist.TabIndex = 25;
+            this.AddToWishlist.Text = "Add movie to selected wishlist";
+            this.AddToWishlist.UseVisualStyleBackColor = true;
+            this.AddToWishlist.Click += new System.EventHandler(this.AddToWishlist_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(762, 603);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(166, 84);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Add movie to cart";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // movieBindingSource1
+            // 
+            this.movieBindingSource1.DataMember = "Movie";
+            this.movieBindingSource1.DataSource = this.s2T5DataSet;
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "Title";
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genreDataGridViewTextBoxColumn
+            // 
+            this.genreDataGridViewTextBoxColumn.DataPropertyName = "Genre";
+            this.genreDataGridViewTextBoxColumn.HeaderText = "Genre";
+            this.genreDataGridViewTextBoxColumn.Name = "genreDataGridViewTextBoxColumn";
+            this.genreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // runTimeDataGridViewTextBoxColumn
+            // 
+            this.runTimeDataGridViewTextBoxColumn.DataPropertyName = "RunTime";
+            this.runTimeDataGridViewTextBoxColumn.HeaderText = "Run Time";
+            this.runTimeDataGridViewTextBoxColumn.Name = "runTimeDataGridViewTextBoxColumn";
+            this.runTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ratingDataGridViewTextBoxColumn
+            // 
+            this.ratingDataGridViewTextBoxColumn.DataPropertyName = "Rating";
+            this.ratingDataGridViewTextBoxColumn.HeaderText = "Rating";
+            this.ratingDataGridViewTextBoxColumn.Name = "ratingDataGridViewTextBoxColumn";
+            this.ratingDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // DaysForRent
+            // 
+            this.DaysForRent.DataPropertyName = "DaysForRent";
+            this.DaysForRent.HeaderText = "Days For Rent";
+            this.DaysForRent.Name = "DaysForRent";
+            this.DaysForRent.ReadOnly = true;
+            // 
             // _M_Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(948, 692);
+            this.ClientSize = new System.Drawing.Size(991, 697);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.AddToWishlist);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.WishlistBox);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.MovieList);
             this.Controls.Add(this.SearchBox);
@@ -321,6 +373,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,11 +391,6 @@
         private S2T5DataSet s2T5DataSet;
         private System.Windows.Forms.BindingSource movieBindingSource;
         private S2T5DataSetTableAdapters.MovieTableAdapter movieTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn daysForRentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ratingDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn runTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button BrowseButton;
         private System.Windows.Forms.Button ViewCartButton;
         private System.Windows.Forms.Button ViewWishlistButton;
@@ -353,5 +401,15 @@
         private System.Windows.Forms.ToolStripMenuItem AboutButton;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem FAQButton;
+        private System.Windows.Forms.ListBox WishlistBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button AddToWishlist;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.BindingSource movieBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DaysForRent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ratingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn runTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
     }
 }

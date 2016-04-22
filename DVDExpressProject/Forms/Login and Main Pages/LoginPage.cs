@@ -77,10 +77,37 @@ namespace DVDExpressProject
 
         private void AdminLogin_Click(object sender, EventArgs e)
         {
-            AdminMainPage homePage = new AdminMainPage();
-            homePage.Show();
-            MessageBox.Show("Login Succesful");
-            this.Hide();
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Login> Logins = db.GetTable<Login>();
+            Table<Member> Members = db.GetTable<Member>();
+            string username = UsernameBox.Text;
+            string password = PasswordBox.Text;
+            bool loginSuccessful = false;
+            var loginQuery =
+                from login in db.Logins
+                where (login.Username == username && login.Password == password && login.IsAdmin == true)
+                select login.MemberID;
+
+
+
+            foreach (var login in loginQuery)
+            {
+                var memberQuery =
+                    from account in db.Members
+                    where account.MemberID == login
+                    select account;
+                foreach (var account in memberQuery)
+                {
+                    AdminMainPage homePage = new AdminMainPage();
+                    homePage.adminAccount = account;
+                    homePage.Show();
+                    MessageBox.Show("Login Succesful");             
+                    loginSuccessful = true;
+                    this.Hide();
+                }
+            }
+            if (loginSuccessful == false)
+                MessageBox.Show("Incorrect Username or Password."); 
         }
 
         private void AboutButton_Click(object sender, EventArgs e)

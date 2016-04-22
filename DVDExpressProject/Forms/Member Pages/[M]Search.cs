@@ -31,7 +31,22 @@ namespace DVDExpressProject.Forms.Member_Pages
         {
             // TODO: This line of code loads data into the 's2T5DataSet.Movie' table. You can move, or remove it, as needed.
             this.movieTableAdapter.Fill(this.s2T5DataSet.Movie);
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Wishlist> Wishlists = db.GetTable<Wishlist>();
+            Table<Movie> Movies = db.GetTable<Movie>();
 
+            var matchWishlists =
+                from wishlist in Wishlists
+                where wishlist.MemberID == userAccount.MemberID
+                select wishlist;
+
+            List < string > userWishlists = new List<string>();
+
+            foreach (Wishlist wishlist in matchWishlists)
+            {
+                userWishlists.Add(wishlist.Title);
+            }
+            WishlistBox.DataSource = userWishlists;
         }
 
         private void BrowseButton_Click(object sender, EventArgs e)
@@ -88,6 +103,7 @@ namespace DVDExpressProject.Forms.Member_Pages
 
 
             DataTable SearchedMovies = new DataTable();
+            SearchedMovies.Columns.Add("Movie ID");
             SearchedMovies.Columns.Add("Title");
             SearchedMovies.Columns.Add("Genre");
             SearchedMovies.Columns.Add("Run Time");
@@ -95,9 +111,38 @@ namespace DVDExpressProject.Forms.Member_Pages
             SearchedMovies.Columns.Add("Days for rent");
             foreach (var mov in query)
             {
-                SearchedMovies.Rows.Add(mov.Title, mov.Genre, mov.RunTime, mov.Rating, mov.DaysForRent);
+                SearchedMovies.Rows.Add(mov.MovieID, mov.Title, mov.Genre, mov.RunTime, mov.Rating, mov.DaysForRent);
             }
             MovieList.DataSource = SearchedMovies;
+        }
+
+        private void AddToWishlist_Click(object sender, EventArgs e)
+        {
+            DVDExpressDataContext db = new DVDExpressDataContext();
+            Table<Wishlist> Wishlists = db.GetTable<Wishlist>();
+            Table<Movie> Movies = db.GetTable<Movie>();
+
+            var getCorrectWishlist =
+                from wishlist in Wishlists
+                where (wishlist.Title == WishlistBox.SelectedItem && wishlist.MemberID == userAccount.MemberID)
+                select wishlist;
+
+
+
+            var getCorrectMovie =
+                from movie in Movies
+                where movie.Title == MovieList.SelectedCells.ToString()
+                select movie;
+
+            foreach(Wishlist wishlist in getCorrectWishlist)
+            {
+                foreach(Movie movie in getCorrectMovie)
+                {
+                    wishlist.MovieID = movie.MovieID;
+                }
+            }
+            db.SubmitChanges();
+            MessageBox.Show("Movie Added to Wishlist!");
         }
     }
 }

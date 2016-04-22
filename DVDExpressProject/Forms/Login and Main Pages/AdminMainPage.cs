@@ -13,6 +13,7 @@ namespace DVDExpressProject.Forms
 {
     public partial class AdminMainPage : Form
     {
+        public Member adminAccount { get; set; }
         public AdminMainPage()
         {
             InitializeComponent();
